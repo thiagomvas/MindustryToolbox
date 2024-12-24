@@ -1,0 +1,51 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+@* Required *@
+<MudThemeProvider IsDarkMode="true" />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3">Mindustry Toolbox</MudText>
+        <MudSpacer />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        <MudButton FullWidth="true" OnClick="@(() => NavigateTo("Sectors"))" StartIcon="@Icons.Material.Filled.Map" Variant="Variant.Text" Color="Color.Inherit">
+            <MudTooltip Placement="Placement.Right" Arrow="true" Text="View a list of all sectors with their respective info">
+                Sectors
+            </MudTooltip>
+        </MudButton>
+        <MudButton FullWidth="true" Href="/Calculator" StartIcon="@Icons.Material.Filled.Calculate" Variant="Variant.Text" Color="Color.Inherit" Disabled="true">
+            <MudTooltip Placement="Placement.Right" Arrow="true" Text="Automatically calculate required throughput, drills and energy cost based on your demands">
+                Calculator - WIP
+            </MudTooltip>
+        </MudButton>
+
+    </MudDrawer>
+    <MudMainContent>
+        <div style="margin: 10px;">
+            @Body
+
+        </div>
+    </MudMainContent>
+</MudLayout>
+@code {
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    void NavigateTo(string path)
+    {
+        Navigation.NavigateTo(path);
+    }
+
+}
