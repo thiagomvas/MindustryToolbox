@@ -1,7 +1,66 @@
 ﻿@page "/sectors"
+@inject HttpClient Http
+@using MindustryToolbox.Core
+@using MindustryToolbox.Core.Entities
+@using MindustryToolbox.Core.ValueTypes
 
-<h3>SectorsPage</h3>
+<MudTable Items="@filteredSectors" FixedHeader="true" Height="90vh">
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Difficulty</MudTh>
+        <MudTh>Copper</MudTh>
+        <MudTh>Lead</MudTh>
+        <MudTh>Sand</MudTh>
+        <MudTh>Coal</MudTh>
+        <MudTh>Titanium</MudTh>
+        <MudTh>Thorium</MudTh>
+        <MudTh>Scrap</MudTh>
+        <MudTh>Water</MudTh>
+        <MudTh>Oil</MudTh>
+        <MudTh>Magma</MudTh>
+        <MudTh>Waves</MudTh>
+        <MudTh>Vulnerable to</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.Name</MudTd>
+        <MudTd>@context.Threat</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Copper)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Lead)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Sand)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Coal)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Titanium)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Thorium)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Scrap)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Water)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Oil)</MudTd>
+        <MudTd>@SectorHasResourceString(context, Resource.Magma)</MudTd>
+        <MudTd>@context.NumOfWaves</MudTd>
+        <MudTd>@string.Join(',', context.VulnerableTo)</MudTd>
+    </RowTemplate>
+</MudTable>
 
 @code {
+    private List<Sector> allSectors = new List<Sector>();
+    private IEnumerable<Sector> filteredSectors = new List<Sector>();
 
+    private Resource ResourceFilter { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var text = await Http.GetStringAsync("data/Sectors.txt");
+        var context = new MindustryDbContext();
+        context.ParseSectors(text);
+        allSectors = context.Sectors;
+        Filter();
+    }
+
+    private void Filter()
+    {
+        filteredSectors = allSectors.Where(s => (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)));
+    }
+
+    string SectorHasResourceString(Sector s, Resource r)
+    {
+        return s.Resources.HasFlag(r) ? "Yes" : "No";
+    }
 }

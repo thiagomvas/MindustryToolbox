@@ -12,9 +12,14 @@ namespace MindustryToolbox.Core
         public static List<Sector> ParseSectors(string filePath)
         {
             var lines = File.ReadAllLines(filePath);
+            return ParseSectorsFromText(lines);
+        }
+
+        public static List<Sector> ParseSectorsFromText(string[] lines)
+        {
             var sectors = new List<Sector>();
 
-            foreach(var line in lines)
+            foreach (var line in lines)
             {
                 var parts = line.Split('\t');
                 string name = parts[0];
