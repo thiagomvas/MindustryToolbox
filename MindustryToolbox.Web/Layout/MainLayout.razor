@@ -14,6 +14,10 @@
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudText Typo="Typo.h5" Class="ml-3">Mindustry Toolbox</MudText>
         <MudSpacer />
+        <!--Github icon button that opens the repo in a new tab-->
+        <MudTooltip Text="Visit the repository">
+            <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Target="_blank" Color="Color.Inherit" Edge="Edge.End" Href="https://github.com/thiagomvas/MindustryToolbox" />
+        </MudTooltip>
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <MudButton FullWidth="true" OnClick="@(() => NavigateTo("Sectors"))" StartIcon="@Icons.Material.Filled.Map" Variant="Variant.Text" Color="Color.Inherit">
