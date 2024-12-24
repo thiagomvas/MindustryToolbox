@@ -1,0 +1,288 @@
+﻿Ground Zero	Survival	LOW	X	x					X	X		X	10	None
+Frozen Forest	Survival	LOW	X	X		X							15	None
+The Craters	Survival	LOW	X	X	X	X			X	X			20	None
+Biomass Synthesis Facility	Survival	MEDIUM	X	X	X	X			X	X			20	None
+Ruinous Shores	Survival	MEDIUM	X	X	x	X			X	X			30	None
+Stained Mountains	Survival	MEDIUM	X	X	X	X	x		X	X			30	None
+Fungal Pass	Attack	MEDIUM	X	X	X	X				X			-	210
+Windswept Islands	Survival	MEDIUM	X	X	X	X	X		X	X			20	None
+Overgrowth	Attack	MEDIUM	X	X	X	X	X		X	X			20	210 & 133
+Tar Fields	Survival	HIGH	X	X	X	X	X	X	X	X	X		40	None
+Nuclear Production Complex	Survival	HIGH	X	Х	X	X	Х	X	X	X		X	50	69, 70, 129, 224
+Extraction Outpost	Attack	HIGH	X	X	X	X	X		X				-	None
+Salt Flats	Attack	 HIGH	X	X	X	X	X		X				-	None
+Impact 0078	Survival	HIGH	X	X		X	X	X	X	X			45	24 & 226
+Desolate Rift	Survival	EXTREME	X	X	X	X	X	X	X	X		XX	18	124 & 180
+Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
+0	Attack	MEDIUM	X	X	X	X				X			-	Planetary Launch Terminal
+1	Survival	LOW	X	X	X				X	X			20	Salt Flats
+2	Survival	LOW	X	X	X	X			X	X			20	None
+3	Survival	LOW	X	X	X				X	X			20	None
+4	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	114, 115
+5	Attack	HIGH	X	X		X	X	X					-	121
+6	Survival	HIGH	X	X	X	X	X	X	X	X			35	124, 125
+7	Survival	EXTREME	X	X	X	X	X	X	X	X	X		35	129
+8	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	133 & Overgrowth
+9	Survival	MEDIUM	X	X	X	X	X		X	X			25	138
+10	Attack	MEDIUM	X	X	X	X	X		X	X	X		-	None
+11	Attack	EXTREME	X	X	X	X	X			X	X		-	148, 149
+12	Survival	MEDIUM	X	X	X					X			25	154
+13	Attack	HIGH	X	X	X	X	X	X	X	X			-	158
+14	Survival	LOW	X	X	X	X	X			X	X		20	
+15(Ground Zero)	Survival	LOW	X	X					X	X		X	10	
+16	Survival	MEDIUM	X	X	X	X	X	X		X	X	X	25	
+17	Survival	MEDIUM	X	X	X	X			X	X		XXX	25	
+18(The Craters)	Survival	LOW	X	X	X	X			X	X			20	
+19	Attack	MEDIUM	X	X	X	X	X		X	X				
+20(Stained Mountains)	Survival	MEDIUM	X	X	X	X	X		X	X			30	
+21(Fungal Pass)	Attack	MEDIUM	X	X	X	X	X			X			-	
+22	Survival	LOW	X	X	X					X			20	Naval Fortress
+23(Tar Fields)	Survival	HIGH	X	X	X	X	X	X	X	X	X		40	
+24	Attack	ERADICATION	X	X	X	X	X	X		X			-	224, 225, 226, 229
+25	Attack	HIGH	X	X	X	X	X	X		X	X		-	233
+26	Survival	MEDIUM	X	X	X	X	X			X			25	241
+27	Survival	LOW	X	X	X				X	X			20	None
+28	Attack	HIGH	X	X	X	X	X			X	X		-	248
+29	Survival	EXTREME	X	X	X	X	X	X		X	X		55	254, 255, 257, 259
+30	Attack	HIGH	X	X	X	X	X	X		X	X		-	264, 265
+31	Attack	HIGH	X	X	X	X	X			X	X		-	None
+32	Survival	MEDIUM	X	X	X	X				X			25	154,Planetary Launch Terminal
+33	Survival	MEDIUM	X	X	X	X			X	X	X		25	154, Planetary Launch Terminal
+34	Attack	HIGH	X	X	X	X				X	X		-	
+35	Survival	HIGH	X	X	X					X				
+36	Attack	HIGH	X	X	X	X	X		130	X	X		-	
+37	Survival	HIGH	X	X	X				X	X			20	
+38	Attack	HIGH	X	X	X	X			X	X	X		-	
+39	Survival	HIGH	X	X	X	X			X	X			20	
+40	Survival	LOW	X	X	X	X				X			20	216
+41	Survival	HIGH	X	X	X	X			X	X			20	Salt Flats
+42	Survival	HIGH	X	X	X	X			X	X	X		20	
+43	Survival	HIGH	X	X	X	X				X			20	
+44	Survival	HIGH	X	X	X	X				X	X		25	241
+45	Survival	HIGH	X	X	X				X	X			25	182
+46	Survival	HIGH	X	X	X	X				X			25	182
+47	Attack	HIGH	X	X	X	X	X			X	X	XX	-	None
+48	Survival	HIGH	X	X						X	X		20	None
+49	Attack	HIGH	X	X	X	X				X		X	-	None
+50	Survival	HIGH	X	X	X	X				X		X	20	None
+51	Survival	HIGH	X	X	X	X			X	X			20	None
+52	Survival	HIGH	X	X	X	X		X		X			25	158
+53	Survival	EXTREME	X	X	X	X	X	X	X	X	X		55	114, 158, 254, 255
+54	Attack	ERADICATION	X	X	X	X	X	X		X	X		-	114, 115, 254, 259
+55	Survival	MEDIUM	X	X	X	X	X	X	X	X			25	115
+56	Attack	HIGH	X	X	X	X	X		X	X			-	None
+57	Attack	HIGH	X	X	X	X	X	X		X		X	-	248, 257
+58	Survival	MEDIUM	X	X	X	X	X	X					25	248
+59	Attack	HIGH	X	X	X	X	X	X	X	X	X		-	None
+60	Attack	EXTREME	X	X	X	X	X	X		X			-	121, 264, 265
+61	Survival	HIGH	X	X	X	X	X	X	X	X			45	121, 259, 264
+62	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		25	180
+63	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	124, 180
+64	Survival	HIGH	X	X	x	X	X			X			35	124, 125
+65	Survival	HIGH	X	X	X	*-	X	X		X	X	X	45	125, 226
+66	Survival	HIGH	X	X	X	X	X	X	X	X	X		45	225, 226, 233
+67	Survival	MEDIUM	X	X		X	X	X		X			25	241
+68	Attack	HIGH	X	X	X	X	X	X	X	X			-	129
+69	Attack	ERADICATION	X	X	X	X	X	X	X	X			-	129 224 225 233
+70	Attack	EXTREME	X	X	X	X	X	X		X			-	229 224
+71	Attack	HIGH	X	X	X	X	X		X	X	X		d	None
+72	Survival	HIGH	X	X	X	X	X	X	X	X			25	133
+73	Survival	HIGH	X	X	X	X	X				X		45	133,210,265,Overgrowth
+74	Survival	MEDIUM	X	X	X	X	X			X			25	Overgrowth & 210
+75	Survival	HIGH	X	X	X	X			X	X			20	None
+76	Survival	HIGH	X	X	X	X	X			X			   	None
+77	Survival	HIGH	X	X	X					X			25	138
+78	Survival	HIGH	X	X	X	X	X			X	X		25	138
+79	Survival	HIGH	X	X	X	X	X			X			25	257
+80	Survival	HIGH	X	X	X	X	X		X	X			`1	255
+81(Biomass Synthesis Facility)	Survival	HIGH	X	X	X	X			X	X			20	None
+82	Survival	LOW	X	X	X	X				X	X		20	None
+83	Survival	LOW	X	X	X	X	X		XXX	X	X		20	None
+84	Attack	HIGH	X	X	X	X	X	x	XXX	X	X		-	229
+85	Survival	MEDIUM	X	X	X	X		X		X	X		25	None
+86(Frozen Forest)	Survival	LOW	X	X		X							15	None
+87	Survival	MEDIUM	X	X	X	X	X	X	X	X			25	148
+88	Survival	HIGH	X	X	X	X		X	X	X			35	148, 149
+89	Survival	MEDIUM	X	X	X	X				X	X		25	149
+90	Survival	LOW	X	X	X	X			X	X		XXX	20	None
+91	Survival	LOW	X	X	X	X				X		XXX	20	None
+92	Survival	HIGH	X	X	X	X	X			X			35	0, 36, Planetary Launch Terminal
+93(Planetary Launch Terminal)	Attack	HIGH	X	X	X	X		X		X		X	-	0, 154
+94	Survival	HIGH	X	X	X	X			X	X			35	0,34,Planetary Launch Terminal
+95	Survival	LOW	X	X	X	X				X	X		25	0, 34
+96	Survival	LOW	X	X	X	X				X	X		35	0 & 36
+97	Survival	LOW	X	X	X				X	X			20	Salt Flats
+98	Survival	MEDIUM	X	X	X	X				X			25	38
+99	Survival	MEDIUM	X	X	X	X			X	X	X		25	38
+100	Survival	LOW	X	X	X					X			20	Salt Flats
+101(Salt Flats)	Attack	HIGH	X	X	X	X	X		X				-	None
+102	Survival	LOW	X	X	X	X			X	X			20	None
+103	Survival	LOW	X	X	X	X				X			20	None
+104	Survival	LOW	X	X	X	X			X	X			20	None
+105	Survival	LOW	X	X	X	X			X	X		f	20	None
+106	Survival	MEDIUM	X	X	X	X				X			25	182
+107	Survival	MEDIUM	X	X	X	X			X	X			25	47
+108	Survival	HIGH	X	X	X					X	X		30	47
+109	Survival	MEDIUM	X	X	X					X			25	49
+110	Survival	MEDIUM	X	X	X				X	X			25	49
+111	Survival	LOW	X	X	X				X	X			20	None
+112	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		25	56
+113	Survival	HIGH	X	X	X	X	X	X		X	X		35	114, 158
+114	Attack	EXTREME	X	X	X	X	X	X		X	X		-	54, 115, 254
+115	Attack	LOW	X	X	X	X	X	X		X	X		-	54, 114
+116	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	56, 115
+117	Survival	HIGH	XX	XX	X	XX	XXX		 XXXXXXXXXXXXXXXXXXXXX	X			45	5, 57, 121
+118	Survival	HIGH	X	X	X	X	X	X		X			45	5, 57, 248
+119	Survival	HIGH	X	X	X	X	X	XXX		X			35	5, 59
+120	Survival	EXTREME	XX	XX	XX	XX	XX	XX	XXX	XX			55	5, 59, 60, 121
+121	Attack	EXTREME	X	X	X	X	X	X	X	X			-	
+122	Survival	LOW	X	X	X	X	X	xxxxxx		X	X		20	124 180
+123(Desolate Rift)	Survival	EXTREME	X	X	X	X	X	X	X	X		XXX	18	125
+124	Attack	HIGH	X	X	X	X		X	X	X	X		30	124
+125	Attack	HIGH	X	X	X	X	X	X	X	X			-	125, 226
+126	Survival	HIGH	X	X	X	X	X	X		X	X		35	71
+127	Survival	MEDIUM	X	X	X	X	x			X	X		25	68, 129
+128	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	68, 69
+129	Attack	EXTREME	X	X	X	X	X	X	X	X			-	69
+130(Nuclear Production Complex)	Survival	HIGH	X	X	X	X	X	X	X	X		X	50	70, 129, 224
+131	Survival	HIGH	X	X	X	X	X	X		X			45	133
+132	Survival	LOW	X	X	X	X	X		X	X	X		25	Overgrowth
+133	Attack	MEDIUM	XX	XX	XXX	XXX	XXX	XXX		X	X		-	210
+134(Overgrowth)	Attack	HIGH	X	X	X	X	X	X	X	x			-	Overgrowth
+135	Survival	LOW	X	X	X	X			X	X		X	20	Overgrowth
+136	Survival	LOW	X	X	X	X			X	X	X		20	138
+137	Survival	MEDIUM	X	X	X	X			X	X	X	º	25	None
+138	Attack	MEDIUM	X	X	X	X	X		X	X			-	None
+139	Survival	MEDIUM	X	X	X	X	X			X	X		25	None
+140	Survival	LOW	X	X	X	X	X	X	x	X			20	None
+141	Survival	LOW	X	X	X	X	X		X	X			20	None
+142	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	10
+143	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	10, 84
+144	Survival	HIGH	X	X	X	X	X			X	X		35	10, 84
+145	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	10
+146	Survival	MEDIUM	X	X	X	X	X				X		25	11, 148
+147	Survival	LOW	X	X	X	X	X			X	X		35	11, 149
+148	Attack	LOW	X	X	X	X	X			X	X		-	11, 148
+149	Attack	LOW	X	X	X	X				X			-	11, 149
+150	Survival	HIGH	X	X	X	X			X	X			35	11
+151	Survival	MEDIUM	X	X	X	X				X	X		25	None
+152	Survival	LOW	X	X	X	X			w	X			20	154
+153	Survival	LOW	X	X	X	X				X			25	Planetary Launch Terminal
+154	Attack	MEDIUM	X	X	X	X			X	X	X		-	154
+155	Survival	LOW	X	X	X	X				X		XX	25	None
+156	Survival	LOW	X	X	X	X				X			20	None
+157	Survival	LOW	X	X	X				X	X			20	13
+158	Attack	HIGH	X	X	X	X	X	X	X	X	X		-	13, 34, 158
+159	Survival	LOW	X	X	X	X	X		X	X	X		45	13, 34
+160	Survival	LOW	X	X	X	X	X			X			35	13
+161	Survival	LOW	X	X	X	X	X			X			25	13
+162	Survival	LOW	X	X	X	X	X		X	X	X		25	13
+163	Survival	HIGH	X	X	X	X	X	X	X	X			45	13, 158, 255
+164	Survival	LOW	X	X	X	X			X	X			25	38, Extraction Outpost
+165(Extraction Outpost)	Attack	HIGH	X	X	X	X	X		X				-	None
+166	Survival	MEDIUM	X	X	X	X			X	X		XXX	25	34, Extraction Outpost
+167	Survival	MEDIUM	X	X	X	X	X		X	X			25	34
+168	Survival	MEDIUM	X	X	X	X	X		X	X			25	56
+169	Survival	MEDIUM	X	X	X	X	X		X	X	X		35	38, 56
+170	Survival	MEDIUM	X	X	X	X	X						25	124
+171	Survival	MEDIUM	X	X	X	X	X			X			25	36
+172	Survival	MEDIUM	X	X	X	X			X	X			25	36
+173	Survival	LOW	X	X	X	X				X			20	Extraction Outpost
+174	Survival	LOW	X	X	X	X					X		20	None
+175	Survival	LOW	X	X	X	X	X		X	X	X		20	None
+176	Survival	LOW	X	X	X	X	X		X	X	X		20	None
+177	Survival	LOW	X	X	X	X			X	X			20	None
+178	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	36
+179	Survival	HIGH	X	X	X	X	X		X	X			35	36, 180
+180	Attack	MEDIUM	X	X	X	X	X	X		X			-	None
+181	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		25	180
+182	Attack	MEDIUM	X	X	X	X			X	X	X		-	None
+183	Survival	MEDIUM	X	X	X	X			X	X			25	182
+184	Survival	MEDIUM	X	X	X	X				X		XXX	25	47
+185	Survival	HIGH	X	X	X	X	X		X	X	X		35	47, 59
+186	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	59
+187	Survival	MEDIUM	X	X	X	X	X			X		XXX	25	182
+188	Survival	MEDIUM	X	X	X	X	X			X			25	71
+189	Survival	HIGH	X	X	X	X	X		X	X			35	49 & 71
+190	Survival	MEDIUM	X	X	X	X			X	X			25	49
+191	Survival	LOW	X	X	X					X			20	None
+192	Survival	LOW	X	X	X	X				X			20	None
+193	Survival	MEDIUM	X	X	X	X	XX			X	X		25	241
+194	Survival	HIGH	X	X	X	X	X			X	X		35	19, 84
+195	Survival	MEDIUM	X	X	X		X			s		X	25	19
+196	Survival	HIGH	X	X	X	X	X			X			35	19, 49
+197	Survival	HIGH	X	X	X	X	X			X	X		45	19, 49, 71
+198	Survival	HIGH	X	X	X	X	X		X	X			45	19, 70, 71
+199	Survival	EXTREME	X	X	X	X	X	X	X	X	X		55	19, 70, 84, 229
+200	Survival	LOW	X	X	X	X			X	X			20	None
+201	Survival	LOW	X	X	X	X				X			20	None
+202	Survival	LOW	X	X	X					X			20	None
+203	Survival	LOW	X	X	X	X			X	X	X		20	None
+204	Survival	LOW	X	X	X	X				X	X		20	None
+205	Survival	LOW	X	X	X				X	X			20	None
+206	Survival	HIGH	X	X	X	X	X	X	X	X			35	59, 60, Fungal Pass
+207	Survival	HIGH	X	X	X	X	X	X	X	X			35	47, 59, Fungal Pass
+208	Survival	MEDIUM	XX	XX	XXX	XXX	XXX		X	XX			25	47, Fungal Pass
+209	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	210, Fungal Pass
+210	Attack	MEDIUM	X	X	X	X	XX			X			-	Overgrowth & Fungal Pass
+211	Survival	HIGH	X	X	X	X	X	X	X		X		45	60, 210, 265, Fungal Pass
+212	Survival	LOW	X	X	X	X			X	X	X		20	None
+213(Ruinous Shores)	Survival	MEDIUM	X	X	X	X			X	X			30	None
+214	Survival	LOW	X	X	X	X			X	X	X		20	None
+215	Survival	LOW	X	X	X	X			X	X			20	Naval Fortress
+216	Attack	EXTREME	X	X	X	X			X	X			-	None
+217	Survival	LOW	X	X	X	X			X	X			20	None
+218	Survival	MEDIUM	X	X	    	X	X		X	X	X		25	125
+219	Survival	LOW	X	X		X	X			X			20	None
+220	Survival	LOW	X	X	X	X	X			X	X		20	Salt Flats
+221	Survival	LOW	X	X	X	X	X			X			20	None
+222	Survival	LOW	X	X	X	X	X		X				20	None
+223	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		25	None
+224	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	225, 24, 229, 70, 69
+225	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	226, 24, 224, 69, 233
+226	Attack	EXTREME	X	X	X	X	X	X	X	X	X		-	24, 225
+227(Impact 0078)	Survival	HIGH	X	X		X	X	X	X	X			45	24, 226
+228	Survival	EXTREME	X	X	X	X	X	X	X	X	X		55	24, 84, 229
+229	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	24, 70, 84, 224
+230	Survival	MEDIUM	X	X	X	X	X	X	X	X	X	 	35	25, 148
+231	Survival	MEDIUM	X	X	X	X	X	X	X	X			25	25
+232	Survival	MEDIUM	X	X	X	X	X	X		X	X		35	25
+233	Attack	EXTREME	X	X	X	X	X	X	X	X	X		-	25, 69, 225
+234	Survival	ERADICATION	X	X	X	X	X	X	X	X	X		65	25, 68, 69, 129, 233
+235	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		35	25, 68
+236	Survival	MEDIUM	X	X	X	X			X	X			25	241
+237	Survival	LOW	X	X	X	X	X		X	X			20	None
+238	Survival	MEDIUM	X	X	X	X	X			X	X		25	149
+239	Survival	MEDIUM	X	X	X	X	X	X	X	X	X		25	68
+240	Survival	HIGH	X	X	X	X	X	X	X		X		35	68, 241
+241	Attack	MEDIUM	X	X	X	X	X			X	X		-	None
+242	Survival	MEDIUM	X	X	X	X			X	X			25	138
+243	Survival	LOW	X	X	X				X	X			20	None
+244	Survival	LOW	X	X	X	X			X			XX	20	None
+245	Survival	LOW	X	X	X	X			X	X			20	None
+246(Windswept Islands)	Survival	MEDIUM	X	X	X	X	X		X	X			20	None
+247	Survival	LOW	X	X	X	X				X	X	X	20	None
+248	Attack	MEDIUM	X	X	X	X	X			X	X		-	28, 57
+249	Survival	EXTREME	X	X	X	X	X			X			55	28, 57, 248, 257
+250	Survival	MEDIUM	X	X	X	X	X			X	X		25	28
+251	Survival	MEDIUM	X	X	X	X	X		X	X	X		25	28
+252	Survival	MEDIUM	X	X	X	X	X			X	X		25	28
+253	Survival	HIGH	X	X	X	X	X			X	X		35	28, 248
+254	Attack	MEDIUM	X	X	X	X	X	X	X	X	X		-	54, 114, 255, 259
+255	Attack	MEDIUM	X	X	X	X	X	X	X	X			-	254
+256	Survival	HIGH	X	X	X	X	X	X		X			35	255, 257
+257	Attack	MEDIUM	X	X	X	X	X	X	X	X			-	57
+258	Survival	HIGH	X	X	X	X	X	X	X	X	X		45	57, 257, 259
+259	Attack	MEDIUM	X	X	X	X	X	X	X	X	X		-	54, 254, 
+260	Survival	HIGH	X	X	X	X	X	X		X			45	30, 133, 265
+261	Survival	MEDIUM	X	X	X	X	X	X	X				25	30
+262	Survival	HIGH	X	X	X	X	X	X		X	X		45	30, 54, 115
+263	Survival	EXTREME	XX	XX	X	XX	XX	XX	X		X		55	30, 54, 259, 264
+264	Attack	ERADICATION	X	X	X	X	X	X		X	X		-	30, 60, 121, 265
+265	Attack	EXTREME	X	X	X	X	X	X	X	X	X		-	30, 60, 264
+266	Survival	HIGH	X	X	X	X	X			X	X		35	31, 38
+267	Survival	HIGH	X	X	X	X	X			X			45	31, 38, 56
+268	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	31, 56
+269	Survival	MEDIUM	X	X	X	X	X	X		X			25	31
+270	Survival	MEDIUM	X	X	X	X	X		X	X			25	31
+271	Survival	MEDIUM	X	X	X	X	X			X	X		25	
