@@ -5,37 +5,46 @@
 @using MindustryToolbox.Core.ValueTypes
 
 <!-- Filters Section -->
-<MudStack  Direction="Row" AlignItems="AlignItems.Center" Spacing="2" JustifyContent="JustifyContent.Start">
+<MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="2" JustifyContent="JustifyContent.Start">
     <MudTextField T="string"
-    Label="Search by Name"
-    Immediate="true"
-    ValueChanged="OnSearchChanged"
-    Value="@searchTerm"
-    Adornment="Adornment.Start"
-    AdornmentIcon="@Icons.Material.Filled.Search"
-    Placeholder="Type to search..."
-    Variant="Variant.Outlined"
-    FullWidth="true"/>
+                  Label="Search by Name"
+                  Immediate="false"
+                  ValueChanged="OnSearchChanged"
+                  Value="@searchTerm"
+                  Adornment="Adornment.Start"
+                  AdornmentIcon="@Icons.Material.Filled.Search"
+                  Placeholder="Type to search..."
+                  Variant="Variant.Outlined"
+                  FullWidth="true" />
 
     <MudStack Row="true" Spacing="1" Style="width: 100%;">
         @foreach (var resource in TableResources)
         {
             <MudButton Variant="@(ResourceFilter.HasFlag(resource) ? Variant.Filled : Variant.Outlined)"
-            Color="@(ResourceFilter.HasFlag(resource) ? Color.Primary : Color.Secondary)"
-            OnClick="@(() => ApplyFilter(resource))"
-            Style="min-width: 120px;">
+                       Color="@(ResourceFilter.HasFlag(resource) ? Color.Primary : Color.Secondary)"
+                       OnClick="@(() => ApplyFilter(resource))"
+                       Style="min-width: 120px;">
                 <MudTooltip Text="@($"Show only sectors with {resource}")">@resource</MudTooltip>
             </MudButton>
         }
     </MudStack>
+    <MudStack Row="true" Spacing="2">
+        <MudButton OnClick="FilterAsync"
+                   Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   StartIcon="@Icons.Material.Filled.Filter"
+                   Style="margin-left: 8px;">
+            Apply Filters
+        </MudButton>
 
-    <MudButton OnClick="ClearFilters"
-    Variant="Variant.Outlined"
-    Color="Color.Warning"
-    StartIcon="@Icons.Material.Filled.Clear"
-    Style="margin-left: 8px;">
-        Clear Filters
-    </MudButton>
+        <MudButton OnClick="ClearFilters"
+                   Variant="Variant.Outlined"
+                   Color="Color.Warning"
+                   StartIcon="@Icons.Material.Filled.Clear"
+                   Style="margin-left: 8px;">
+            Clear Filters
+        </MudButton>
+    </MudStack>
 </MudStack>
 
 
@@ -58,20 +67,45 @@ else if (hasLoaded)
             <MudTh>Difficulty</MudTh>
             @foreach (var resource in TableResources)
             {
-                <MudTh>@resource</MudTh>
+                <MudTh>
+                    <MudTooltip Text="@($"Has {resource}")">
+                        <MudImage Alt="@resource.ToString()" ObjectPosition="ObjectPosition.Center" Width="22" Height="22" Src="@($"assets/{resource}.webp")" />
+                    </MudTooltip>
+                </MudTh>
             }
             <MudTh>Waves</MudTh>
             <MudTh>Vulnerable To</MudTh>
         </HeaderContent>
         <RowTemplate>
             <MudTd>@context.Name</MudTd>
-            <MudTd>@context.Threat</MudTd>
+            <MudTd>
+                <MudText>
+                    <strong style="color: @GetColorForThreat(context.Threat)">@context.Threat</strong>
+                </MudText>
+            </MudTd>
             @foreach (var resource in TableResources)
             {
-                <MudTd>@SectorHasResourceString(context, resource)</MudTd>
+                <MudTd>
+                    @if (SectorHasResource(context, resource))
+                    {
+                        <MudIcon Icon="@Icons.Material.Filled.Check" Color="Color.Success" />
+                    }
+                    else
+                    {
+                        <MudIcon Icon="@Icons.Material.Filled.Clear" Color="Color.Error" />
+                    }
+                </MudTd>
             }
-            <MudTd>@context.NumOfWaves</MudTd>
-            <MudTd>@string.Join(", ", context.VulnerableTo.Select(v => v.ToString()))</MudTd>
+            <MudTd>@(context.NumOfWaves == -1 ? "N/A" : context.NumOfWaves.ToString())</MudTd>
+            @if (context.VulnerableTo.Length == 0)
+            {
+                <MudTd>None</MudTd>
+            }
+            else
+            {
+
+                <MudTd>@string.Join(", ", context.VulnerableTo.Select(v => v.ToString()))</MudTd>
+            }
         </RowTemplate>
     </MudTable>
 }
@@ -101,39 +135,57 @@ else if (hasLoaded)
         var context = new MindustryDbContext();
         context.ParseSectors(text);
         allSectors = context.Sectors;
-        Filter();
+        await FilterAsync();
         hasLoaded = true;
     }
 
-    private void Filter()
+    private async Task FilterAsync()
     {
-        filteredSectors = allSectors.Where(s =>
-            (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)) &&
-            (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)));
+        await Task.Run(() =>
+        {
+            filteredSectors = allSectors
+                .Where(s =>
+                    (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)) &&
+                    (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
+                .ToList();
+        });
+        StateHasChanged();
     }
 
-    private void ApplyFilter(Resource filter)
+    private async void ApplyFilter(Resource filter)
     {
         ResourceFilter = ResourceFilter.HasFlag(filter) ? ResourceFilter & ~filter : ResourceFilter | filter;
-        Filter();
     }
 
 
-    private void OnSearchChanged(string value)
+    private async void OnSearchChanged(string value)
     {
         searchTerm = value;
-        Filter();
+        await FilterAsync();
     }
 
-    private void ClearFilters()
+    private async void ClearFilters()
     {
         searchTerm = string.Empty;
         ResourceFilter = Resource.None;
-        Filter();
+        await FilterAsync();
     }
 
-    private string SectorHasResourceString(Sector s, Resource r)
+    private bool SectorHasResource(Sector s, Resource r)
     {
-        return s.Resources.HasFlag(r) ? "Yes" : "No";
+        return s.Resources.HasFlag(r);
+    }
+
+    private string GetColorForThreat(Threat threat)
+    {
+        return threat switch
+        {
+            Threat.Low => "#e6e6e6",
+            Threat.Medium => "#ffccc6",
+            Threat.High => "#ff998d",
+            Threat.Extreme => "#ff0000",
+            Threat.Eradication => "#9c0000",
+            _ => "purple"
+        };
     }
 }
