@@ -1,14 +1,35 @@
-﻿using MindustryToolbox.Core.Entities;
+﻿using MindustryToolbox.Core.Converters;
+using MindustryToolbox.Core.Entities;
 using MindustryToolbox.Core.ValueTypes;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 
 namespace MindustryToolbox.Core
 {
     internal static class Utils
     {
+
+        public static IEnumerable<Structure> ParseStructures(string filePath)
+        {
+            var json = File.ReadAllText(filePath);
+            return ParseStructuresFromText(json);
+        }
+        public static IEnumerable<Structure> ParseStructuresFromText(string json)
+        {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+                Converters =
+                {
+                    new ResourceJsonConverter(),
+                    new StructureTypeJsonConverter()
+                }
+            };
+            return JsonSerializer.Deserialize<IEnumerable<Structure>>(json, options);
+        }
         public static List<Sector> ParseSectors(string filePath)
         {
             var lines = File.ReadAllLines(filePath);
