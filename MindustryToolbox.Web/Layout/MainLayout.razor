@@ -25,7 +25,7 @@
                 Sectors
             </MudTooltip>
         </MudButton>
-        <MudButton FullWidth="true" Href="/Calculator" StartIcon="@Icons.Material.Filled.Calculate" Variant="Variant.Text" Color="Color.Inherit">
+        <MudButton FullWidth="true" OnClick="@(() => NavigateTo("Calculator"))" StartIcon="@Icons.Material.Filled.Calculate" Variant="Variant.Text" Color="Color.Inherit">
             <MudTooltip Placement="Placement.Right" Arrow="true" Text="Automatically calculate required throughput, drills and energy cost based on your demands">
                 Calculator
             </MudTooltip>
