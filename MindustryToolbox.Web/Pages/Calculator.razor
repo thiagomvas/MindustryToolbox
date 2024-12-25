@@ -1,0 +1,19 @@
+﻿@page "/calculator"
+@inject HttpClient Http
+@using MindustryToolbox.Core
+@using MindustryToolbox.Core.Entities
+@using MindustryToolbox.Core.ValueTypes
+
+<ProductionTree Node="node"/>
+
+@code {
+    private ProductionNode node;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var json = await Http.GetStringAsync("data/Structures.json");
+        Mindustry.GetStructures(json);
+
+        node = Mindustry.CalculateProduction(Resource.Silicon, 10);
+    }
+}

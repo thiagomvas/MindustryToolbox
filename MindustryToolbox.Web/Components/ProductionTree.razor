@@ -1,0 +1,46 @@
+﻿@using MudBlazor
+@using MindustryToolbox.Core.Entities
+
+@if (Node != null)
+{
+    <MudPaper Class="p-4" Elevation="4">
+        <MudTreeView T="ProductionNode">
+            <MudTreeViewItem Text="@($"{Node.Resource} - {Node.OutputPerSecond}/s")" Expanded="true">
+                @foreach (var recipe in Node.Recipes)
+                {
+                    @if (recipe != null)
+                    {
+                        <MudTreeViewItem Text="@($"{recipe.Structure.Name} needed: {recipe.AmountNeeded}, producing {Math.Round(recipe.OutputPerSecond, 4)}/s.")" Expanded="true">
+                            @foreach (var input in recipe.Inputs)
+                            {
+                                @if (input != null)
+                                {
+                                    <MudTreeViewItem Text="@($"{input.Resource} production needed: {input.OutputPerSecond}/s")">
+                                        <ProductionTree Node="input" />
+                                    </MudTreeViewItem>
+                                }
+                                else
+                                {
+                                    <MudTreeViewItem Text="INPUT IS NULL" Icon="@Icons.Material.Filled.Error" />
+                                }
+                            }
+                        </MudTreeViewItem>
+                    }
+                    else
+                    {
+                        <MudTreeViewItem Text="RECIPE IS NULL" Icon="@Icons.Material.Filled.Error" />
+                    }
+                }
+            </MudTreeViewItem>
+        </MudTreeView>
+    </MudPaper>
+}
+else
+{
+    <MudAlert Severity="Severity.Error" Elevation="2">NODE IS NULL</MudAlert>
+}
+
+@code {
+    [Parameter]
+    public ProductionNode Node { get; set; }
+}

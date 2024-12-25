@@ -15,7 +15,10 @@ namespace MindustryToolbox.Core
         public static IEnumerable<Structure> ParseStructures(string filePath)
         {
             var json = File.ReadAllText(filePath);
-
+            return ParseStructuresFromText(json);
+        }
+        public static IEnumerable<Structure> ParseStructuresFromText(string json)
+        {
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
@@ -25,7 +28,6 @@ namespace MindustryToolbox.Core
                     new StructureTypeJsonConverter()
                 }
             };
-
             return JsonSerializer.Deserialize<IEnumerable<Structure>>(json, options);
         }
         public static List<Sector> ParseSectors(string filePath)

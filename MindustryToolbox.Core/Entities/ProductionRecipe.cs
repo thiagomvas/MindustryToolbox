@@ -8,16 +8,20 @@ using System.Threading.Tasks;
 namespace MindustryToolbox.Core.Entities;
 public class ProductionRecipe
 {
-    public Resource Resource { get; set; }
-    public Structure Structure { get; set; }
-    public double OutputPerSecond { get; set; }
+    public ProductionNode Parent { get; init; }
+    public Structure Structure { get; init; }
+    public double OutputPerSecond { get; init; }
     public List<ProductionNode> Inputs { get; set; } = new();
+    public readonly int AmountNeeded;
 
-    public ProductionRecipe(Resource resource, Structure structure, double outputPerSecond)
+    public ProductionRecipe(ProductionNode parent, Structure structure, double outputPerSecond)
     {
-        Resource = resource;
+        Parent = parent;
         Structure = structure;
         OutputPerSecond = outputPerSecond;
+
+        var output = structure.Outputs.First(o => o.Resource == parent.Resource);
+        AmountNeeded = (int)Math.Ceiling(outputPerSecond / output.Rate);
     }
 
     public override string ToString()
@@ -30,9 +34,7 @@ public class ProductionRecipe
     internal void ToStringRecursive(StringBuilder sb, int indentLevel)
     {
         var indent = new string(' ', indentLevel * 2);
-        var output = Structure.Outputs.First(o => o.Resource == Resource);
-        var amountNeeded = Math.Ceiling(OutputPerSecond / output.Rate);
-        sb.AppendLine($"{indent}{Structure.Name} needed: {amountNeeded} producing {Math.Round(OutputPerSecond, 4)}/s.");
+        sb.AppendLine($"{indent}{Structure.Name} needed: {AmountNeeded} producing {Math.Round(OutputPerSecond, 4)}/s.");
 
         foreach (var input in Inputs)
         {

@@ -1,0 +1,79 @@
+[
+  {
+    "Name": "Silicon Smelter",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 3
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 1.5
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Silicon",
+        "Rate": 1.5
+      }
+    ]
+  },
+  {
+    "Name": "Mechanical Drill",
+    "Type": "Drill",
+    "Outputs": [
+      {
+        "Resource": "Copper",
+        "Rate": 0.09
+      },
+      {
+        "Resource": "Lead",
+        "Rate": 0.09
+      },
+      {
+        "Resource": "Sand",
+        "Rate": 0.1
+      },
+      {
+        "Resource": "Scrap",
+        "Rate": 0.1
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 0.085
+      }
+    ]
+  },
+  {
+    "Name": "Pneumatic Drill",
+    "Type": "Drill",
+    "Outputs": [
+      {
+        "Resource": "Copper",
+        "Rate": 0.1325
+      },
+      {
+        "Resource": "Lead",
+        "Rate": 0.1325
+      },
+      {
+        "Resource": "Sand",
+        "Rate": 0.15
+      },
+      {
+        "Resource": "Scrap",
+        "Rate": 0.15
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.1075
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 0.1175
+      }
+    ],
+    "Inputs": []
+  }
+]

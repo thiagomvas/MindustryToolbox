@@ -46,7 +46,11 @@ public class Mindustry
 
     public static IEnumerable<Sector> GetSectors(string sectorText)
     {
-        return Utils.ParseSectorsFromText(sectorText.Split('\n'));
+        if(Instance.Sectors is null)
+        {
+            Instance.Sectors = Utils.ParseSectorsFromText(sectorText.Split('\n'));
+        }
+        return Instance.Sectors;
     }
 
     public static Structure GetStructure(string json)
@@ -64,6 +68,14 @@ public class Mindustry
         return Instance.Structures;
     }
 
+    public static IEnumerable<Structure> GetStructures(string structuresJson)
+    {
+        if (Instance.Structures is null)
+        {
+            Instance.Structures = Utils.ParseStructuresFromText(structuresJson);
+        }
+        return Instance.Structures;
+    }
 
     public static ProductionNode CalculateProduction(Resource resource, double resourcesPerSecExpected)
     {
@@ -81,7 +93,7 @@ public class Mindustry
             var output = producer.Outputs.First(o => o.Resource == resource);
             var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / output.Rate);
 
-            var recipe = new ProductionRecipe(resource, producer, numProducersNeeded * output.Rate);
+            var recipe = new ProductionRecipe(node, producer, numProducersNeeded * output.Rate);
             node.Recipes.Add(recipe);
 
             foreach(var requiredInput in producer.Inputs)
