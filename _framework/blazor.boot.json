@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MindustryToolbox.Web",
   "resources": {
-    "hash": "sha256-vfBNgHj8570bIHf2gkLnNcLgevKo3bSVp/EWt1NSRDY=",
+    "hash": "sha256-QXF6CQiJa5siMKShxXYSgdwIIrelOLysiFDgASWrW7M=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.axmj5y8s84.js": "sha256-s67NKDbcssHPQowjs9cUpPt6BZPt+/QQL3JFikU0JkA="
     },
@@ -38,8 +38,8 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-T1eQdeyKxVW6kBiNfVF8qH0qlp6Wps/Rb92Txu0hJhg=",
       "Microsoft.JSInterop.wasm": "sha256-9CIPapGo4ATEZp/IbmEbRYLHaoJMmgoh8qFDo7/qVVU=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-LXKI1Xk0vZqszYFxcQd7eDggR2xmrgv9gTFBtdpZ8vQ=",
-      "MindustryToolbox.Core.wasm": "sha256-YnfihHsFcrNoOmQv772lMSSORoT55cjNL6EVwyyxAcg=",
-      "MindustryToolbox.Web.wasm": "sha256-+oM+W/iV63hTZ4QJFj2LoECI9ZnIg9V0kN0EyYl7ALY=",
+      "MindustryToolbox.Core.wasm": "sha256-s8AC1E9Jt3unteuoOPSK3cTxjvztYhaCTW3Al2XPcjo=",
+      "MindustryToolbox.Web.wasm": "sha256-qoFKadI+VLeYJqZmOkbn/iz+FVu3tQSxnGOfRjDBwZs=",
       "MudBlazor.wasm": "sha256-ph8va6KlRsF/atGM/8fZ5rDuU45sa/V7jufH/yguwsU=",
       "System.Collections.Concurrent.wasm": "sha256-uu/ZpZavM6yPGhvJoS+HnMY00okfyaOWjA2BPYDQxWw=",
       "System.Collections.Immutable.wasm": "sha256-Df1ympvUITP8w98wUwmqJthCMQlQld/uwuqfOtX11i4=",
