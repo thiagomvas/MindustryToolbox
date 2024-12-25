@@ -1,24 +1,5 @@
 [
-  {
-    "Name": "Silicon Smelter",
-    "Type": "Factory",
-    "Inputs": [
-      {
-        "Resource": "Sand",
-        "Rate": 3
-      },
-      {
-        "Resource": "Coal",
-        "Rate": 1.5
-      }
-    ],
-    "Outputs": [
-      {
-        "Resource": "Silicon",
-        "Rate": 1.5
-      }
-    ]
-  },
+
   {
     "Name": "Mechanical Drill",
     "Type": "Drill",
@@ -72,6 +53,424 @@
       {
         "Resource": "Coal",
         "Rate": 0.1175
+      }
+    ],
+    "Inputs": []
+  },
+  {
+    "Name": "Laser Drill",
+    "Type": "Drill",
+    "Outputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 0.2133
+      },
+      {
+        "Resource": "Scrap",
+        "Rate": 0.2133
+      },
+      {
+        "Resource": "Copper",
+        "Rate": 0.1811
+      },
+      {
+        "Resource": "Lead",
+        "Rate": 0.1811
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 0.1577
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.1388
+      },
+      {
+        "Resource": "Thorium",
+        "Rate": 0.1244
+      }
+    ],
+    "Inputs": []
+  },
+  {
+    "Name": "Airblast Drill",
+    "Type": "Drill",
+    "Outputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 0.213750
+      },
+      {
+        "Resource": "Scrap",
+        "Rate": 0.213750
+      },
+
+      {
+        "Resource": "Coal",
+        "Rate": 0.157500
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.139375
+      },
+      {
+        "Resource": "Thorium",
+        "Rate": 0.125000
+      }
+    ],
+    "Inputs": []
+  },
+
+  {
+    "Name": "Silicon Smelter",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 3
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 1.5
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Silicon",
+        "Rate": 1.5
+      }
+    ]
+  },
+  {
+    "Name": "Graphite Press",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Graphite",
+        "Rate": 0.67
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Coal",
+        "Rate": 1.33
+      }
+    ]
+  },
+  {
+    "Name": "Multi-Press",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Silicon",
+        "Rate": 5.3
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 4
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 2.6
+      },
+      {
+        "Resource": "Pyratite",
+        "Rate": 0.6
+      }
+    ]
+  },
+  {
+    "Name": "Kiln",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Metaglass",
+        "Rate": 2
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Lead",
+        "Rate": 2
+      },
+      {
+        "Resource": "Sand",
+        "Rate": 2
+      }
+    ]
+  },
+  {
+    "Name": "Plastanium Compressor",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Plastanium",
+        "Rate": 1
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Titanium",
+        "Rate": 2
+      },
+      {
+        "Resource": "Oil",
+        "Rate": 15
+      }
+    ]
+  },
+  {
+    "Name": "Phase Weaver",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "PhaseFabric",
+        "Rate": 0.5
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Thorium",
+        "Rate": 2
+      },
+      {
+        "Resource": "Sand",
+        "Rate": 5
+      }
+    ]
+  },
+  {
+    "Name": "Surge Smelter",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "SurgeAlloy",
+        "Rate": 0.8
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Copper",
+        "Rate": 2.4
+      },
+      {
+        "Resource": "Lead",
+        "Rate": 3.2
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 1.6
+      },
+      {
+        "Resource": "Silicon",
+        "Rate": 2.4
+      }
+    ]
+  },
+  {
+    "Name": "Pulverizer",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 1.51
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Scrap",
+        "Rate": 1.51
+      }
+    ]
+  },
+  {
+    "Name": "Melter",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Slag",
+        "Rate": 12
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Scrap",
+        "Rate": 6.25
+      }
+    ]
+  },
+
+  {
+    "Name": "Separator",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Copper",
+        "Rate": 0.72
+      },
+
+      {
+        "Resource": "Lead",
+        "Rate": 0.43
+      },
+      {
+        "Resource": "Graphite",
+        "Rate": 0.29
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.29
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Slag",
+        "Rate": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Disassembler",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Sand",
+        "Rate": 1.6
+      },
+      {
+        "Resource": "Graphite",
+        "Rate": 0.8
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.8
+      },
+      {
+        "Resource": "Thorium",
+        "Rate": 0.8
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Scrap",
+        "Rate": 4
+      },
+      {
+        "Resource": "Slag",
+        "Rate": 7.2
+      }
+    ]
+  },
+  {
+    "Name": "Spore Press",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "SporePod",
+        "Rate": 3
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Oil",
+        "Rate": 18
+      }
+    ]
+  },
+  {
+    "Name": "Coal Centrifuge",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Coal",
+        "Rate": 2
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Oil",
+        "Rate": 6
+      }
+    ]
+  },
+  {
+    "Name": "Cryofluid Mixer",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Cryofluid",
+        "Rate": 0
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Water",
+        "Rate": 12
+      },
+      {
+        "Resource": "Titanium",
+        "Rate": 0.5
+      }
+    ]
+  },
+  {
+    "Name": "Pyratite Mixer",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "Pyratite",
+        "Rate": 0.75
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Lead",
+        "Rate": 1.5
+      },
+      {
+        "Resource": "Sand",
+        "Rate": 1.5
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 0.75
+      }
+    ]
+  },
+  {
+    "Name": "Blast Mixer",
+    "Type": "Factory",
+    "Outputs": [
+      {
+        "Resource": "BlastCompound",
+        "Rate": 0.75
+      }
+    ],
+    "Inputs": [
+      {
+        "Resource": "Pyratite",
+        "Rate": 0.75
+      },
+      {
+        "Resource": "SporePod",
+        "Rate": 0.75
+      }
+    ]
+  },
+
+  {
+    "Name": "Mechanical Pump",
+    "Type": "Drill",
+    "Outputs": [
+      {
+        "Resource": "Water",
+        "Rate": 7
+      },
+      {
+        "Resource": "Oil",
+        "Rate": 7
       }
     ],
     "Inputs": []

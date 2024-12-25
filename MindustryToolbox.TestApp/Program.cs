@@ -3,4 +3,4 @@ using MindustryToolbox.Core.ValueTypes;
 
 var structures = Mindustry.GetStructures();
 
-Console.WriteLine(Mindustry.CalculateProduction(Resource.Silicon, 10));
+Console.WriteLine(Mindustry.CalculateProduction(Resource.PhaseFabric, 10));
