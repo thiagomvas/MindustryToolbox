@@ -64,6 +64,37 @@ public class Mindustry
         return Instance.Structures;
     }
 
+
+    public static ProductionNode CalculateProduction(Resource resource, double resourcesPerSecExpected)
+    {
+        var root = new ProductionNode(resource, resourcesPerSecExpected);
+        return CalculateProductionRecursive(resource, resourcesPerSecExpected, root);
+
+    }
+
+    private static ProductionNode CalculateProductionRecursive(Resource resource, double resourcesPerSecExpected, ProductionNode node)
+    {
+        var producers = GetStructures().Where(s => s.Outputs.Any(o => o.Resource == resource));
+
+        foreach(var producer in producers)
+        {
+            var output = producer.Outputs.First(o => o.Resource == resource);
+            var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / output.Rate);
+
+            var recipe = new ProductionRecipe(resource, producer, numProducersNeeded * output.Rate);
+            node.Recipes.Add(recipe);
+
+            foreach(var requiredInput in producer.Inputs)
+            {
+                var childNode = new ProductionNode(requiredInput.Resource, requiredInput.Rate * numProducersNeeded);
+                recipe.Inputs.Add(childNode);
+                CalculateProductionRecursive(requiredInput.Resource, requiredInput.Rate * numProducersNeeded, childNode);
+            }
+        }
+
+        return node;
+    }
+
     public static string GetNumOfDrillNeededForResourcePerSecond(Resource resource, float resourcesPerSecExpected)
     {
         // Retrieve all structures that produce the target resource

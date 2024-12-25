@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MindustryToolbox.Core.ValueTypes;
-public readonly record struct ResourceRate
+public enum ProductionNodeType
 {
-    public Resource Resource { get; init; }
-    public double Rate { get; init; }
+
 }
