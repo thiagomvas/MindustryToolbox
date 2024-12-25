@@ -8,10 +8,14 @@
 
   <ItemGroup>
     <None Remove="Resources\Sectors.txt" />
+    <None Remove="Resources\Structures.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Resources\Sectors.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Structures.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
