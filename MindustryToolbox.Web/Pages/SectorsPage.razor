@@ -8,42 +8,45 @@
 
 <!-- Filters Section -->
 <MudTextField T="string"
-Label="Search by Name"
-Immediate="false"
-ValueChanged="OnSearchChanged"
-Value="@searchTerm"
-Adornment="Adornment.Start"
-AdornmentIcon="@Icons.Material.Filled.Search"
-Placeholder="Type to search..."
-Variant="Variant.Outlined"
-FullWidth="true" />
+              Label="Search by Name"
+              Immediate="false"
+              ValueChanged="OnSearchChanged"
+              Value="@searchTerm"
+              Adornment="Adornment.Start"
+              AdornmentIcon="@Icons.Material.Filled.Search"
+              Placeholder="Type to search..."
+              Variant="Variant.Outlined"
+              FullWidth="true" />
 <MudGrid Spacing="0">
     @foreach (var resource in TableResources)
     {
         <MudItem>
             <MudButton Variant="@(ResourceFilter.HasFlag(resource) ? Variant.Filled : Variant.Outlined)"
-            Color="@(ResourceFilter.HasFlag(resource) ? Color.Primary : Color.Secondary)"
-            OnClick="@(() => ApplyFilter(resource))"
-            Style="min-width: 120px; padding: 0;">
+                       Color="@(ResourceFilter.HasFlag(resource) ? Color.Primary : Color.Secondary)"
+                       OnClick="@(() => ApplyFilter(resource))"
+                       Style="min-width: 120px; padding: 0;">
                 <MudTooltip Text="@($"Show only sectors with {resource}")">@resource</MudTooltip>
             </MudButton>
         </MudItem>
     }
 </MudGrid>
+<MudCheckBox  @bind-Value="noVulnerabilities">
+    Show only sectors with no vulnerabilities
+</MudCheckBox>
 <MudStack Row="true" Spacing="2">
     <MudButton OnClick="@(async () => await FilterAsync())"
-    Variant="Variant.Outlined"
-    Color="Color.Primary"
-    StartIcon="@Icons.Material.Filled.Filter"
-    Style="margin-left: 8px;">
+               Variant="Variant.Outlined"
+               Color="Color.Primary"
+               StartIcon="@Icons.Material.Filled.Filter"
+               Style="margin-left: 8px;">
         Apply Filters
     </MudButton>
 
     <MudButton OnClick="ClearFilters"
-    Variant="Variant.Outlined"
-    Color="Color.Warning"
-    StartIcon="@Icons.Material.Filled.Clear"
-    Style="margin-left: 8px;">
+               Variant="Variant.Outlined"
+               Color="Color.Warning"
+               StartIcon="@Icons.Material.Filled.Clear"
+               Style="margin-left: 8px;">
         Clear Filters
     </MudButton>
 </MudStack>
@@ -123,6 +126,8 @@ else
     private Sector[] filteredSectors = [];
     private string searchTerm = string.Empty;
     private Resource ResourceFilter { get; set; } = Resource.None;
+    private bool noVulnerabilities = false;
+
     private bool hasLoaded = false;
     private Resource[] TableResources = [
         Resource.Copper,
@@ -161,7 +166,8 @@ else
             filteredSectors = allSectors
                 .Where(s =>
                     (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)) &&
-                    (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
+                    (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) &&
+                    (!noVulnerabilities || s.VulnerableTo.Length == 0))
                 .ToArray();
         });
         StateHasChanged();
