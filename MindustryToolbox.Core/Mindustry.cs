@@ -1,10 +1,6 @@
 ﻿using MindustryToolbox.Core.Entities;
 using MindustryToolbox.Core.ValueTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MindustryToolbox.Core;
 public class Mindustry
@@ -46,7 +42,7 @@ public class Mindustry
 
     public static IEnumerable<Sector> GetSectors(string sectorText)
     {
-        if(Instance.Sectors is null)
+        if (Instance.Sectors is null)
         {
             Instance.Sectors = Utils.ParseSectorsFromText(sectorText.Split('\n'));
         }
@@ -88,7 +84,7 @@ public class Mindustry
     {
         var producers = GetStructures().Where(s => s.Outputs.Any(o => o.Resource == resource));
 
-        foreach(var producer in producers)
+        foreach (var producer in producers)
         {
             var output = producer.Outputs.First(o => o.Resource == resource);
             var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / output.Rate);
@@ -96,7 +92,7 @@ public class Mindustry
             var recipe = new ProductionRecipe(node, producer, numProducersNeeded * output.Rate);
             node.Recipes.Add(recipe);
 
-            foreach(var requiredInput in producer.Inputs)
+            foreach (var requiredInput in producer.Inputs)
             {
                 var childNode = new ProductionNode(requiredInput.Resource, requiredInput.Rate * numProducersNeeded);
                 recipe.Inputs.Add(childNode);

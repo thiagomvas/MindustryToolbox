@@ -1,13 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MindustryToolbox.Core.Entities;
-using MindustryToolbox.Core.ValueTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MindustryToolbox.Core;
+﻿namespace MindustryToolbox.Core;
 public class MindustryDbContext
 {
     public List<Entities.Sector> Sectors { get; set; } = new();
@@ -15,7 +6,7 @@ public class MindustryDbContext
     public MindustryDbContext()
     {
     }
-    
+
     public void FetchSectors()
     {
         // Get the resource path for the sectors file, it is located wherever the built files are

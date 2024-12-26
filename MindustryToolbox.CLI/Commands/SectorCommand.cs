@@ -3,7 +3,6 @@ using MindustryToolbox.Core.Entities;
 using MindustryToolbox.Core.ValueTypes;
 using SharpTables;
 using System.CommandLine;
-using System.Security.Principal;
 
 namespace MindustryToolbox.CLI.Commands;
 public class SectorCommand : BaseCommand
@@ -54,7 +53,7 @@ public class SectorCommand : BaseCommand
         }
 
         Sector[] sectors;
-        if(string.IsNullOrWhiteSpace(selectedSector))
+        if (string.IsNullOrWhiteSpace(selectedSector))
             sectors = context.Sectors.Where(s =>
             (resourceFilter == Resource.None || s.Resources.HasFlag(resourceFilter)) &&
             (string.IsNullOrWhiteSpace(difficulty) || s.Threat.ToString().Equals(difficulty, StringComparison.OrdinalIgnoreCase)) &&

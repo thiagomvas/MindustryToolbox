@@ -1,11 +1,6 @@
 ﻿using MindustryToolbox.Core.ValueTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
 using System.Text.Json;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace MindustryToolbox.Core.Converters;
 public class StructureTypeJsonConverter : JsonConverter<StructureType>
