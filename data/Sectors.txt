@@ -29,15 +29,10 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 12	Survival	MEDIUM	X	X	X					X			25	154
 13	Attack	HIGH	X	X	X	X	X	X	X	X			-	158
 14	Survival	LOW	X	X	X	X	X			X	X		20	
-15(Ground Zero)	Survival	LOW	X	X					X	X		X	10	
 16	Survival	MEDIUM	X	X	X	X	X	X		X	X	X	25	
 17	Survival	MEDIUM	X	X	X	X			X	X		XXX	25	
-18(The Craters)	Survival	LOW	X	X	X	X			X	X			20	
 19	Attack	MEDIUM	X	X	X	X	X		X	X				
-20(Stained Mountains)	Survival	MEDIUM	X	X	X	X	X		X	X			30	
-21(Fungal Pass)	Attack	MEDIUM	X	X	X	X	X			X			-	
 22	Survival	LOW	X	X	X					X			20	Naval Fortress
-23(Tar Fields)	Survival	HIGH	X	X	X	X	X	X	X	X	X		40	
 24	Attack	ERADICATION	X	X	X	X	X	X		X			-	224, 225, 226, 229
 25	Attack	HIGH	X	X	X	X	X	X		X	X		-	233
 26	Survival	MEDIUM	X	X	X	X	X			X			25	241
@@ -95,19 +90,16 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 78	Survival	HIGH	X	X	X	X	X			X	X		25	138
 79	Survival	HIGH	X	X	X	X	X			X			25	257
 80	Survival	HIGH	X	X	X	X	X		X	X			`1	255
-81(Biomass Synthesis Facility)	Survival	HIGH	X	X	X	X			X	X			20	None
 82	Survival	LOW	X	X	X	X				X	X		20	None
 83	Survival	LOW	X	X	X	X	X		XXX	X	X		20	None
 84	Attack	HIGH	X	X	X	X	X	x	XXX	X	X		-	229
 85	Survival	MEDIUM	X	X	X	X		X		X	X		25	None
-86(Frozen Forest)	Survival	LOW	X	X		X							15	None
 87	Survival	MEDIUM	X	X	X	X	X	X	X	X			25	148
 88	Survival	HIGH	X	X	X	X		X	X	X			35	148, 149
 89	Survival	MEDIUM	X	X	X	X				X	X		25	149
 90	Survival	LOW	X	X	X	X			X	X		XXX	20	None
 91	Survival	LOW	X	X	X	X				X		XXX	20	None
 92	Survival	HIGH	X	X	X	X	X			X			35	0, 36, Planetary Launch Terminal
-93(Planetary Launch Terminal)	Attack	HIGH	X	X	X	X		X		X		X	-	0, 154
 94	Survival	HIGH	X	X	X	X			X	X			35	0,34,Planetary Launch Terminal
 95	Survival	LOW	X	X	X	X				X	X		25	0, 34
 96	Survival	LOW	X	X	X	X				X	X		35	0 & 36
@@ -115,7 +107,6 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 98	Survival	MEDIUM	X	X	X	X				X			25	38
 99	Survival	MEDIUM	X	X	X	X			X	X	X		25	38
 100	Survival	LOW	X	X	X					X			20	Salt Flats
-101(Salt Flats)	Attack	HIGH	X	X	X	X	X		X				-	None
 102	Survival	LOW	X	X	X	X			X	X			20	None
 103	Survival	LOW	X	X	X	X				X			20	None
 104	Survival	LOW	X	X	X	X			X	X			20	None
@@ -137,18 +128,15 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 120	Survival	EXTREME	XX	XX	XX	XX	XX	XX	XXX	XX			55	5, 59, 60, 121
 121	Attack	EXTREME	X	X	X	X	X	X	X	X			-	
 122	Survival	LOW	X	X	X	X	X	xxxxxx		X	X		20	124 180
-123(Desolate Rift)	Survival	EXTREME	X	X	X	X	X	X	X	X		XXX	18	125
 124	Attack	HIGH	X	X	X	X		X	X	X	X		30	124
 125	Attack	HIGH	X	X	X	X	X	X	X	X			-	125, 226
 126	Survival	HIGH	X	X	X	X	X	X		X	X		35	71
 127	Survival	MEDIUM	X	X	X	X	x			X	X		25	68, 129
 128	Survival	HIGH	X	X	X	X	X	X	X	X	X		35	68, 69
 129	Attack	EXTREME	X	X	X	X	X	X	X	X			-	69
-130(Nuclear Production Complex)	Survival	HIGH	X	X	X	X	X	X	X	X		X	50	70, 129, 224
 131	Survival	HIGH	X	X	X	X	X	X		X			45	133
 132	Survival	LOW	X	X	X	X	X		X	X	X		25	Overgrowth
 133	Attack	MEDIUM	XX	XX	XXX	XXX	XXX	XXX		X	X		-	210
-134(Overgrowth)	Attack	HIGH	X	X	X	X	X	X	X	x			-	Overgrowth
 135	Survival	LOW	X	X	X	X			X	X		X	20	Overgrowth
 136	Survival	LOW	X	X	X	X			X	X	X		20	138
 137	Survival	MEDIUM	X	X	X	X			X	X	X	º	25	None
@@ -179,7 +167,6 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 162	Survival	LOW	X	X	X	X	X		X	X	X		25	13
 163	Survival	HIGH	X	X	X	X	X	X	X	X			45	13, 158, 255
 164	Survival	LOW	X	X	X	X			X	X			25	38, Extraction Outpost
-165(Extraction Outpost)	Attack	HIGH	X	X	X	X	X		X				-	None
 166	Survival	MEDIUM	X	X	X	X			X	X		XXX	25	34, Extraction Outpost
 167	Survival	MEDIUM	X	X	X	X	X		X	X			25	34
 168	Survival	MEDIUM	X	X	X	X	X		X	X			25	56
@@ -227,7 +214,6 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 210	Attack	MEDIUM	X	X	X	X	XX			X			-	Overgrowth & Fungal Pass
 211	Survival	HIGH	X	X	X	X	X	X	X		X		45	60, 210, 265, Fungal Pass
 212	Survival	LOW	X	X	X	X			X	X	X		20	None
-213(Ruinous Shores)	Survival	MEDIUM	X	X	X	X			X	X			30	None
 214	Survival	LOW	X	X	X	X			X	X	X		20	None
 215	Survival	LOW	X	X	X	X			X	X			20	Naval Fortress
 216	Attack	EXTREME	X	X	X	X			X	X			-	None
@@ -241,7 +227,6 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 224	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	225, 24, 229, 70, 69
 225	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	226, 24, 224, 69, 233
 226	Attack	EXTREME	X	X	X	X	X	X	X	X	X		-	24, 225
-227(Impact 0078)	Survival	HIGH	X	X		X	X	X	X	X			45	24, 226
 228	Survival	EXTREME	X	X	X	X	X	X	X	X	X		55	24, 84, 229
 229	Attack	ERADICATION	X	X	X	X	X	X	X	X	X		-	24, 70, 84, 224
 230	Survival	MEDIUM	X	X	X	X	X	X	X	X	X	 	35	25, 148
@@ -260,7 +245,6 @@ Planetary Launch Terminal	Attack	ERADICATION	X	X	X	X	X	X		X		X	-	0 & 154
 243	Survival	LOW	X	X	X				X	X			20	None
 244	Survival	LOW	X	X	X	X			X			XX	20	None
 245	Survival	LOW	X	X	X	X			X	X			20	None
-246(Windswept Islands)	Survival	MEDIUM	X	X	X	X	X		X	X			20	None
 247	Survival	LOW	X	X	X	X				X	X	X	20	None
 248	Attack	MEDIUM	X	X	X	X	X			X	X		-	28, 57
 249	Survival	EXTREME	X	X	X	X	X			X			55	28, 57, 248, 257
