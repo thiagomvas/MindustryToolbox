@@ -43,6 +43,15 @@ public class ProductionRecipe
         var output = structure.Outputs.First(o => o.Resource == parent.Resource);
         AmountNeeded = (int)Math.Ceiling(outputPerSecond / output.Rate);
     }
+    public ProductionRecipe(ProductionNode parent, Structure structure, double outputPerSecond, double outputMultiplier)
+    {
+        Parent = parent;
+        Structure = structure;
+        OutputPerSecond = outputPerSecond;
+
+        var output = structure.Outputs.First(o => o.Resource == parent.Resource);
+        AmountNeeded = (int)Math.Ceiling(outputPerSecond / (output.Rate * outputMultiplier));
+    }
 
     /// <summary>
     /// Returns a string representation of the production recipe.

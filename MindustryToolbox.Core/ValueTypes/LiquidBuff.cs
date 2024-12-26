@@ -10,7 +10,14 @@ public readonly record struct LiquidBuff
     /// </summary>
     public readonly double Multiplier;
     /// <summary>
-    /// Gets the rate at which the buff is applied.
+    /// Gets the rate at which the liquid must enter.
     /// </summary>
     public readonly double Rate;
+
+    public LiquidBuff()
+    {
+        this.Liquid = Resource.None;
+        Multiplier = 1;
+        Rate = 0;
+    }
 }

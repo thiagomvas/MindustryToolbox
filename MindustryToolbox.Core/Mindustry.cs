@@ -73,35 +73,69 @@ public class Mindustry
         return Instance.Structures;
     }
 
-    public static ProductionNode CalculateProduction(Resource resource, double resourcesPerSecExpected)
+    public static ProductionNode CalculateProduction(Resource resource, double resourcesPerSecExpected, BuffFlags flags = BuffFlags.NoLiquidOrOverdrive)
     {
         var root = new ProductionNode(resource, resourcesPerSecExpected);
-        return CalculateProductionRecursive(resource, resourcesPerSecExpected, root);
+        return CalculateProductionRecursive(resource, resourcesPerSecExpected, root, flags);
 
     }
 
-    private static ProductionNode CalculateProductionRecursive(Resource resource, double resourcesPerSecExpected, ProductionNode node)
+    private static ProductionNode CalculateProductionRecursive(Resource resource, double resourcesPerSecExpected, ProductionNode node, BuffFlags flags = BuffFlags.NoLiquidOrOverdrive)
     {
         var producers = GetStructures().Where(s => s.Outputs.Any(o => o.Resource == resource));
 
         foreach (var producer in producers)
         {
             var output = producer.Outputs.First(o => o.Resource == resource);
-            var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / output.Rate);
 
-            var recipe = new ProductionRecipe(node, producer, numProducersNeeded * output.Rate);
+            // Apply Liquid Buff (if any) by checking the LiquidBuffs on the structure
+            double outputMultiplier = 1.0;
+            if (flags.HasFlag(BuffFlags.Water))
+            {
+                var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Water);
+                outputMultiplier = buff.Multiplier;
+            }
+            else if (flags.HasFlag(BuffFlags.Cryofluid))
+            {
+                var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Cryofluid);
+                outputMultiplier = buff.Multiplier;
+            }
+
+            // Apply Overdrive Buff (if any) for Dome or Projector
+            double overdriveMultiplier = 1.0;
+
+            if ((flags & BuffFlags.NoOverdrive) == 0)
+            {
+                if ((flags & BuffFlags.OverdriveProjector) > 0)
+                {
+                    overdriveMultiplier = 1.5;
+
+                }
+                else if ((flags & BuffFlags.OverdriveDome) > 0)
+                {
+                    overdriveMultiplier = 2.5;
+
+                }
+            }
+
+            // Adjust the output rate based on buffs
+            var mult = outputMultiplier * overdriveMultiplier;
+            double adjustedOutputRate = output.Rate * mult;
+            var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / adjustedOutputRate);
+            var recipe = new ProductionRecipe(node, producer, numProducersNeeded * adjustedOutputRate, mult);
             node.Recipes.Add(recipe);
 
             foreach (var requiredInput in producer.Inputs)
             {
-                var childNode = new ProductionNode(requiredInput.Resource, requiredInput.Rate * numProducersNeeded);
+                var childNode = new ProductionNode(requiredInput.Resource, requiredInput.Rate * numProducersNeeded * mult);
                 recipe.Inputs.Add(childNode);
-                CalculateProductionRecursive(requiredInput.Resource, requiredInput.Rate * numProducersNeeded, childNode);
+                CalculateProductionRecursive(requiredInput.Resource, requiredInput.Rate * numProducersNeeded * mult, childNode, flags);  // Pass the flags for nested buffs
             }
         }
 
         return node;
     }
+
 
     public static string GetNumOfDrillNeededForResourcePerSecond(Resource resource, float resourcesPerSecExpected)
     {
