@@ -33,8 +33,8 @@
         <MudText>Liquid</MudText>
         <MudToggleGroup @bind-Value="liquidBuff" T="BuffFlags" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
             <MudToggleItem Value="BuffFlags.NoLiquid"> None </MudToggleItem> 
-            <MudToggleItem Value="BuffFlags.Water" />
-            <MudToggleItem Value="BuffFlags.Cryofluid" />
+            <MudToggleItem Value="BuffFlags.Water" > Water </MudToggleItem> 
+            <MudToggleItem Value="BuffFlags.Cryofluid"> Cryofluid </MudToggleItem>
         </MudToggleGroup>
     </MudItem>
     <MudItem xs="12" sm="6">
@@ -118,6 +118,9 @@ else
             isLoading = true;
             errorMessage = null;
             node = Mindustry.CalculateProduction(resource, outputPerSec, liquidBuff | overdriveBuff);
+            Console.WriteLine(liquidBuff | overdriveBuff);
+            Console.WriteLine(liquidBuff);
+            Console.WriteLine( overdriveBuff);
             Console.WriteLine(node);
         }
         catch (Exception ex)

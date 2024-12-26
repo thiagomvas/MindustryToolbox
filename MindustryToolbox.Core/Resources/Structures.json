@@ -5,9 +5,9 @@
     "Type": "Drill",
     "LiquidBuffs": [
       {
-        "Resource": "Water",
+        "Liquid": "Water",
         "Rate": 3,
-        "Multiplier":  2.56
+        "Multiplier": 2.56
       }
     ],
     "Outputs": [
@@ -38,7 +38,7 @@
     "Type": "Drill",
     "LiquidBuffs": [
       {
-        "Resource": "Water",
+        "Liquid": "Water",
         "Rate": 3.6,
         "Multiplier": 2.56
       }
@@ -76,7 +76,7 @@
     "Type": "Drill",
     "LiquidBuffs": [
       {
-        "Resource": "Water",
+        "Liquid": "Water",
         "Rate": 4.8,
         "Multiplier": 2.56
       }
@@ -120,7 +120,7 @@
     "PowerUsage": 180,
     "LiquidBuffs": [
       {
-        "Resource": "Water",
+        "Liquid": "Water",
         "Rate": 6,
         "Multiplier": 3.24
       }

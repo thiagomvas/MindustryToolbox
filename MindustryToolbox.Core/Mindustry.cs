@@ -89,16 +89,19 @@ public class Mindustry
             var output = producer.Outputs.First(o => o.Resource == resource);
 
             // Apply Liquid Buff (if any) by checking the LiquidBuffs on the structure
-            double outputMultiplier = 1.0;
-            if (flags.HasFlag(BuffFlags.Water))
+            double liquidMultiplier = 1.0;
+            if(producer.LiquidBuffs.Length > 0)
             {
-                var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Water);
-                outputMultiplier = buff.Multiplier;
-            }
-            else if (flags.HasFlag(BuffFlags.Cryofluid))
-            {
-                var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Cryofluid);
-                outputMultiplier = buff.Multiplier;
+                if (flags.HasFlag(BuffFlags.Water) && producer.LiquidBuffs.Any(b => b.Liquid == Resource.Water))
+                {
+                    var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Water);
+                    liquidMultiplier = buff.Multiplier;
+                }
+                else if (flags.HasFlag(BuffFlags.Cryofluid) && producer.LiquidBuffs.Any(b => b.Liquid == Resource.Cryofluid))
+                {
+                    var buff = producer.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Cryofluid);
+                    liquidMultiplier = buff.Multiplier;
+                }
             }
 
             // Apply Overdrive Buff (if any) for Dome or Projector
@@ -119,7 +122,7 @@ public class Mindustry
             }
 
             // Adjust the output rate based on buffs
-            var mult = outputMultiplier * overdriveMultiplier;
+            var mult = liquidMultiplier * overdriveMultiplier;
             double adjustedOutputRate = output.Rate * mult;
             var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / adjustedOutputRate);
             var recipe = new ProductionRecipe(node, producer, numProducersNeeded * adjustedOutputRate, mult);

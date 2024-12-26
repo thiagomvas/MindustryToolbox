@@ -3,7 +3,7 @@ using MindustryToolbox.Core.ValueTypes;
 
 var structures = Mindustry.GetStructures();
 
-var node = Mindustry.CalculateProduction(Resource.Graphite, 10);
+var node = Mindustry.CalculateProduction(Resource.Copper, 10);
 
 Console.WriteLine(node);
 
@@ -20,7 +20,7 @@ Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine("WITH OVERDRIVE");
-var node2 = Mindustry.CalculateProduction(Resource.Graphite, 10, BuffFlags.OverdriveDome);
+var node2 = Mindustry.CalculateProduction(Resource.Copper, 10, BuffFlags.Water);
 
 Console.WriteLine(node2);
 
