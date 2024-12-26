@@ -4,90 +4,45 @@
 @using MindustryToolbox.Core.Entities
 @using MindustryToolbox.Core.ValueTypes
 
-<PageTitle>Mindustry Toolbox > Calculator</PageTitle>
-
 <MudGrid>
-    <MudItem xs="12" sm="6">
-        <MudSelect T="Resource"
-        @bind-Value="resource"
-        HelperText="Select a resource"
-        Label="Resource"
-        Variant="Variant.Outlined"
-        Dense="true">
-            @foreach (var resource in Enum.GetValues<Resource>())
-            {
-                <MudSelectItem Value="@resource">@resource</MudSelectItem>
-            }
-        </MudSelect>
-    </MudItem>
-
-    <MudItem xs="12" sm="6">
-        <MudNumericField Variant="Variant.Outlined" Label="Output per second"
-        @bind-Value="outputPerSec"
-        Step="0.1"
-        Min="0.1"
-        Max="10000"
-        HelperText="Rate of production"
-        Dense="true" />
-    </MudItem>
-
-    <MudItem xs="12" sm="6">
-        <MudText>Liquid</MudText>
-        <MudToggleGroup Disabled="true" T="string" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
-            <MudToggleItem Value="@("None")" />
-            <MudToggleItem Value="@("Water")" />
-            <MudToggleItem Value="@("Cryofluid")" />
-        </MudToggleGroup>
-    </MudItem>
-    <MudItem xs="12" sm="6">
-        <MudText>Overdrive</MudText>
-        <MudToggleGroup Disabled="true" T="string" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
-            <MudToggleItem Value="@("None")" />
-            <MudToggleItem Value="@("Projector")" />
-            <MudToggleItem Value="@("Dome")" />
-        </MudToggleGroup>
-    </MudItem>
-
-
     <MudItem xs="12">
-        <MudButton OnClick="@(() => CalculateProduction())" Color="Color.Primary" Variant="Variant.Filled" FullWidth="true" Disabled="@isLoading">
-            @if (isLoading)
-            {
-                <MudProgressCircular Size="Size.Small" />
-            }
-            else
-            {
-                <span>Calculate</span>
-            }
-        </MudButton>
+        <MudSelect T="CalculatorType"
+                   @bind-Value="type"
+                   Label="Select Calculator Type"
+                   Variant="Variant.Outlined"
+                   Dense="true">
+            <MudSelectItem Value="CalculatorType.ProductionPerSec">Production per Second</MudSelectItem>
+            <MudSelectItem Value="CalculatorType.StructureInput">Structure Input</MudSelectItem>
+        </MudSelect>
     </MudItem>
 </MudGrid>
 
 <MudDivider />
 
-@if (node != null && resource == node.Resource && node.Resource != Resource.None && outputPerSec == node.OutputPerSecond)
+@switch(type)
 {
-    <ProductionTree Node="node" />
-}
-else
-{
-    <MudText Typo="Typo.body1" Color="Color.Error">Please calculate production to see results.</MudText>
-}
+    case CalculatorType.ProductionPerSec:
+        <ProductsPerSecCalculator />
+        break;
 
-@if (errorMessage != null)
-{
-    <MudText Typo="Typo.body2" Color="Color.Error">@errorMessage</MudText>
-}
+    case CalculatorType.StructureInput:
+        break;
 
-<MudAlert Severity="Severity.Warning">This tool is currently being developed and may not work 100% as expected, if you encounter any issues, please open an issue on Github</MudAlert>
+    default:
+        <MudText Typo="Typo.body1" Color="Color.Error">Invalid calculator type selected.</MudText>
+        break;
+}
 
 @code {
+    private CalculatorType type = CalculatorType.ProductionPerSec; // Default to Production per Second
+
+    // Production / Sec calculator
     private ProductionNode node;
     private Resource resource = Resource.None;
     private double outputPerSec = 10;
+
     private bool isLoading = false;
     private string errorMessage;
-
 
     protected override async Task OnInitializedAsync()
     {
@@ -128,5 +83,11 @@ else
         {
             isLoading = false;
         }
+    }
+
+    public enum CalculatorType
+    {
+        ProductionPerSec,
+        StructureInput
     }
 }
