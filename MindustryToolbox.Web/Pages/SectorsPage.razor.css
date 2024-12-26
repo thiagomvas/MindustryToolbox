@@ -1,0 +1,42 @@
+﻿table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: block;
+    overflow-x: auto;
+    max-height: 50vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead, tbody {
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #26262f;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #6e6e76;
+    width: 100%;
+}
+
+th {
+    background-color: #26262f;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #26262f;
+}
+
+tbody tr:hover {
+    background-color: #ffffff10;
+}
+
+tbody {
+}

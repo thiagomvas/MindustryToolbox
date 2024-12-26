@@ -30,7 +30,7 @@
         </MudItem>
     }
 </MudGrid>
-<MudCheckBox  @bind-Value="noVulnerabilities">
+<MudCheckBox @bind-Value="noVulnerabilities">
     Show only sectors with no vulnerabilities
 </MudCheckBox>
 <MudStack Row="true" Spacing="2">
@@ -66,53 +66,58 @@
 }
 else if (hasLoaded && !filterChanged)
 {
-    <MudTable Items="@filteredSectors" Loading="true" Breakpoint="Breakpoint.None" FixedHeader="true" Bordered="true" Hover="true" RowsPerPage="10" Height="60vh">
-        <HeaderContent>
-            <MudTh>Name</MudTh>
-            <MudTh>Difficulty</MudTh>
-            @foreach (var resource in TableResources)
-            {
-                <MudTh>
-                    <MudTooltip Text="@($"Has {resource}")">
-                        <MudImage Alt="@resource.ToString()" ObjectPosition="ObjectPosition.Center" Width="22" Height="22" Src="@($"assets/{resource}.webp")" />
-                    </MudTooltip>
-                </MudTh>
-            }
-            <MudTh>Waves</MudTh>
-            <MudTh>Vulnerable To</MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            <MudTd>@context.Name</MudTd>
-            <MudTd>
-                <MudText>
-                    <strong style="color: @GetColorForThreat(context.Threat)">@context.Threat</strong>
-                </MudText>
-            </MudTd>
-            @foreach (var resource in TableResources)
-            {
-                <MudTd>
-                    @if (SectorHasResource(context, resource))
-                    {
-                        <MudIcon Icon="@Icons.Material.Filled.Check" Color="Color.Success" />
-                    }
-                    else
-                    {
-                        <MudIcon Icon="@Icons.Material.Filled.Clear" Color="Color.Error" />
-                    }
-                </MudTd>
-            }
-            <MudTd>@(context.NumOfWaves == -1 ? "N/A" : context.NumOfWaves.ToString())</MudTd>
-            @if (context.VulnerableTo.Length == 0)
-            {
-                <MudTd>None</MudTd>
-            }
-            else
-            {
-                <MudTd>@string.Join(", ", context.VulnerableTo.Select(v => v.ToString()))</MudTd>
-            }
-        </RowTemplate>
-    </MudTable>
+    <div style="height:50vh;">
 
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Difficulty</th>
+                    @foreach (var resource in TableResources)
+                    {
+                        <th>
+                            <img style="width: 22px; height: 22px;" src="@($"assets/{resource}.webp")" />
+                        </th>
+                    }
+                    <th>Waves</th>
+                    <th>Vulnerable To</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sector in filteredSectors)
+                {
+                    <tr>
+                        <td>@sector.Name</td>
+                        <td>
+                            <strong style="color: @GetColorForThreat(sector.Threat)">@sector.Threat</strong>
+                        </td>
+                        @foreach (var resource in TableResources)
+                        {
+                            <td>
+                                @if (SectorHasResource(sector, resource))
+                                {
+                                    <svg xmlns="http://www.w3.org/2000/svg" color="#F44336" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path fill="#4CAF50" stroke="#4CAF50" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+                                }
+                                else
+                                {
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path fill="#F44336" stroke="#F44336" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+                                }
+                            </td>
+                        }
+                        <td>@(sector.NumOfWaves == -1 ? "N/A" : sector.NumOfWaves.ToString())</td>
+                        @if (sector.VulnerableTo.Length == 0)
+                        {
+                            <td>None</td>
+                        }
+                        else
+                        {
+                            <td>@string.Join(", ", sector.VulnerableTo.Select(v => v.ToString()))</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
 }
 else
@@ -158,6 +163,7 @@ else
         if (ResourceFilter == Resource.None && searchTerm == "")
         {
             filteredSectors = allSectors;
+            filterChanged = false;
             return;
         }
 
