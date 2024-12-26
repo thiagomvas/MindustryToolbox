@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MindustryToolbox.Core.ValueTypes;
+﻿namespace MindustryToolbox.Core.ValueTypes;
 public readonly record struct ResourceRate
 {
+    /// <summary>
+    /// Gets the resource.
+    /// </summary>
     public Resource Resource { get; init; }
+    /// <summary>
+    /// Gets the rate of the resource.
+    /// </summary>
     public double Rate { get; init; }
 }

@@ -3,6 +3,13 @@
   {
     "Name": "Mechanical Drill",
     "Type": "Drill",
+    "LiquidBuffs": [
+      {
+        "Liquid": "Water",
+        "Rate": 3,
+        "Multiplier": 2.56
+      }
+    ],
     "Outputs": [
       {
         "Resource": "Copper",
@@ -29,6 +36,13 @@
   {
     "Name": "Pneumatic Drill",
     "Type": "Drill",
+    "LiquidBuffs": [
+      {
+        "Liquid": "Water",
+        "Rate": 3.6,
+        "Multiplier": 2.56
+      }
+    ],
     "Outputs": [
       {
         "Resource": "Copper",
@@ -60,6 +74,14 @@
   {
     "Name": "Laser Drill",
     "Type": "Drill",
+    "LiquidBuffs": [
+      {
+        "Liquid": "Water",
+        "Rate": 4.8,
+        "Multiplier": 2.56
+      }
+    ],
+    "PowerUsage": 66,
     "Outputs": [
       {
         "Resource": "Sand",
@@ -95,6 +117,14 @@
   {
     "Name": "Airblast Drill",
     "Type": "Drill",
+    "PowerUsage": 180,
+    "LiquidBuffs": [
+      {
+        "Liquid": "Water",
+        "Rate": 6,
+        "Multiplier": 3.24
+      }
+    ],
     "Outputs": [
       {
         "Resource": "Sand",
@@ -124,6 +154,7 @@
   {
     "Name": "Silicon Smelter",
     "Type": "Factory",
+    "PowerUsage": 30,
     "Inputs": [
       {
         "Resource": "Sand",
@@ -160,6 +191,7 @@
   {
     "Name": "Multi-Press",
     "Type": "Factory",
+    "PowerUsage": 108,
     "Outputs": [
       {
         "Resource": "Silicon",
@@ -184,6 +216,7 @@
   {
     "Name": "Kiln",
     "Type": "Factory",
+    "PowerUsage": 36,
     "Outputs": [
       {
         "Resource": "Metaglass",
@@ -204,6 +237,7 @@
   {
     "Name": "Plastanium Compressor",
     "Type": "Factory",
+    "PowerUsage": 180,
     "Outputs": [
       {
         "Resource": "Plastanium",
@@ -224,6 +258,7 @@
   {
     "Name": "Phase Weaver",
     "Type": "Factory",
+    "PowerUsage": 300,
     "Outputs": [
       {
         "Resource": "PhaseFabric",
@@ -244,6 +279,7 @@
   {
     "Name": "Surge Smelter",
     "Type": "Factory",
+    "PowerUsage": 240,
     "Outputs": [
       {
         "Resource": "SurgeAlloy",
@@ -272,6 +308,7 @@
   {
     "Name": "Pulverizer",
     "Type": "Factory",
+    "PowerUsage": 30,
     "Outputs": [
       {
         "Resource": "Sand",
@@ -288,6 +325,7 @@
   {
     "Name": "Melter",
     "Type": "Factory",
+    "PowerUsage": 60,
     "Outputs": [
       {
         "Resource": "Slag",
@@ -305,6 +343,7 @@
   {
     "Name": "Separator",
     "Type": "Factory",
+    "PowerUsage": 66,
     "Outputs": [
       {
         "Resource": "Copper",
@@ -334,6 +373,7 @@
   {
     "Name": "Disassembler",
     "Type": "Factory",
+    "PowerUsage": 240,
     "Outputs": [
       {
         "Resource": "Sand",
@@ -366,6 +406,7 @@
   {
     "Name": "Spore Press",
     "Type": "Factory",
+    "PowerUsage": 42,
     "Outputs": [
       {
         "Resource": "SporePod",
@@ -382,6 +423,7 @@
   {
     "Name": "Coal Centrifuge",
     "Type": "Factory",
+    "PowerUsage": 42,
     "Outputs": [
       {
         "Resource": "Coal",
@@ -398,6 +440,7 @@
   {
     "Name": "Cryofluid Mixer",
     "Type": "Factory",
+    "PowerUsage": 60,
     "Outputs": [
       {
         "Resource": "Cryofluid",
@@ -418,6 +461,7 @@
   {
     "Name": "Pyratite Mixer",
     "Type": "Factory",
+    "PowerUsage": 12,
     "Outputs": [
       {
         "Resource": "Pyratite",
@@ -442,6 +486,7 @@
   {
     "Name": "Blast Mixer",
     "Type": "Factory",
+    "PowerUsage": 24,
     "Outputs": [
       {
         "Resource": "BlastCompound",
@@ -458,21 +503,5 @@
         "Rate": 0.75
       }
     ]
-  },
-
-  {
-    "Name": "Mechanical Pump",
-    "Type": "Drill",
-    "Outputs": [
-      {
-        "Resource": "Water",
-        "Rate": 7
-      },
-      {
-        "Resource": "Oil",
-        "Rate": 7
-      }
-    ],
-    "Inputs": []
   }
 ]

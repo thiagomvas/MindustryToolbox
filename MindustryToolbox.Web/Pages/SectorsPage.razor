@@ -7,46 +7,48 @@
 <PageTitle>MindustryToolbox > Sectors</PageTitle>
 
 <!-- Filters Section -->
-<MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="2" JustifyContent="JustifyContent.Start">
-    <MudTextField T="string"
-                  Label="Search by Name"
-                  Immediate="false"
-                  ValueChanged="OnSearchChanged"
-                  Value="@searchTerm"
-                  Adornment="Adornment.Start"
-                  AdornmentIcon="@Icons.Material.Filled.Search"
-                  Placeholder="Type to search..."
-                  Variant="Variant.Outlined"
-                  FullWidth="true" />
-
-    <MudStack Row="true" Spacing="1" Style="width: 100%;">
-        @foreach (var resource in TableResources)
-        {
+<MudTextField T="string"
+              Label="Search by Name"
+              Immediate="false"
+              ValueChanged="OnSearchChanged"
+              Value="@searchTerm"
+              Adornment="Adornment.Start"
+              AdornmentIcon="@Icons.Material.Filled.Search"
+              Placeholder="Type to search..."
+              Variant="Variant.Outlined"
+              FullWidth="true" />
+<MudGrid Spacing="0">
+    @foreach (var resource in TableResources)
+    {
+        <MudItem>
             <MudButton Variant="@(ResourceFilter.HasFlag(resource) ? Variant.Filled : Variant.Outlined)"
                        Color="@(ResourceFilter.HasFlag(resource) ? Color.Primary : Color.Secondary)"
                        OnClick="@(() => ApplyFilter(resource))"
-                       Style="min-width: 120px;">
+                       Style="min-width: 120px; padding: 0;">
                 <MudTooltip Text="@($"Show only sectors with {resource}")">@resource</MudTooltip>
             </MudButton>
-        }
-    </MudStack>
-    <MudStack Row="true" Spacing="2">
-        <MudButton OnClick="FilterAsync"
-                   Variant="Variant.Outlined"
-                   Color="Color.Primary"
-                   StartIcon="@Icons.Material.Filled.Filter"
-                   Style="margin-left: 8px;">
-            Apply Filters
-        </MudButton>
+        </MudItem>
+    }
+</MudGrid>
+<MudCheckBox  @bind-Value="noVulnerabilities">
+    Show only sectors with no vulnerabilities
+</MudCheckBox>
+<MudStack Row="true" Spacing="2">
+    <MudButton OnClick="@(async () => await FilterAsync())"
+               Variant="Variant.Outlined"
+               Color="Color.Primary"
+               StartIcon="@Icons.Material.Filled.Filter"
+               Style="margin-left: 8px;">
+        Apply Filters
+    </MudButton>
 
-        <MudButton OnClick="ClearFilters"
-                   Variant="Variant.Outlined"
-                   Color="Color.Warning"
-                   StartIcon="@Icons.Material.Filled.Clear"
-                   Style="margin-left: 8px;">
-            Clear Filters
-        </MudButton>
-    </MudStack>
+    <MudButton OnClick="ClearFilters"
+               Variant="Variant.Outlined"
+               Color="Color.Warning"
+               StartIcon="@Icons.Material.Filled.Clear"
+               Style="margin-left: 8px;">
+        Clear Filters
+    </MudButton>
 </MudStack>
 
 
@@ -54,6 +56,7 @@
 @if (!hasLoaded)
 {
     <MudProgressCircular Indeterminate="true" Color="Color.Primary" Style="margin: auto;" />
+    <MudAlert Severity="Severity.Info">The website is not frozen! It is just loading the data.</MudAlert>
 }
 
 <!-- Table Section -->
@@ -61,9 +64,9 @@
 {
     <MudAlert Severity="Severity.Warning">No sectors match your search or filters.</MudAlert>
 }
-else if (hasLoaded)
+else if (hasLoaded && !filterChanged)
 {
-    <MudTable Items="@filteredSectors" FixedHeader="true" Height="70vh" Bordered="true" Hover="true" RowsPerPage="10" Breakpoint="Breakpoint.Md">
+    <MudTable Items="@filteredSectors" Loading="true" Breakpoint="Breakpoint.None" FixedHeader="true" Bordered="true" Hover="true" RowsPerPage="10" Height="60vh">
         <HeaderContent>
             <MudTh>Name</MudTh>
             <MudTh>Difficulty</MudTh>
@@ -105,18 +108,26 @@ else if (hasLoaded)
             }
             else
             {
-
                 <MudTd>@string.Join(", ", context.VulnerableTo.Select(v => v.ToString()))</MudTd>
             }
         </RowTemplate>
     </MudTable>
+
+
+}
+else
+{
+    <MudAlert Severity="Severity.Info">Apply the filters to see the results.</MudAlert>
 }
 
 @code {
-    private List<Sector> allSectors = new();
-    private IEnumerable<Sector> filteredSectors = new List<Sector>();
+    bool filterChanged = true;
+    private Sector[] allSectors = [];
+    private Sector[] filteredSectors = [];
     private string searchTerm = string.Empty;
     private Resource ResourceFilter { get; set; } = Resource.None;
+    private bool noVulnerabilities = false;
+
     private bool hasLoaded = false;
     private Resource[] TableResources = [
         Resource.Copper,
@@ -125,6 +136,7 @@ else if (hasLoaded)
     Resource.Coal,
     Resource.Titanium,
     Resource.Thorium,
+    Resource.Scrap,
     Resource.Water,
     Resource.Oil,
     Resource.Magma,
@@ -136,41 +148,51 @@ else if (hasLoaded)
         var text = await Http.GetStringAsync("data/Sectors.txt");
         var context = new MindustryDbContext();
         context.ParseSectors(text);
-        allSectors = context.Sectors;
+        allSectors = context.Sectors.ToArray();
         await FilterAsync();
         hasLoaded = true;
     }
 
     private async Task FilterAsync()
     {
+        if (ResourceFilter == Resource.None && searchTerm == "")
+        {
+            filteredSectors = allSectors;
+            return;
+        }
+
         await Task.Run(() =>
         {
             filteredSectors = allSectors
                 .Where(s =>
                     (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)) &&
-                    (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
-                .ToList();
+                    (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) &&
+                    (!noVulnerabilities || s.VulnerableTo.Length == 0))
+                .ToArray();
         });
         StateHasChanged();
+        filterChanged = false;
     }
 
     private async void ApplyFilter(Resource filter)
     {
         ResourceFilter = ResourceFilter.HasFlag(filter) ? ResourceFilter & ~filter : ResourceFilter | filter;
+        filterChanged = true;
     }
 
 
     private async void OnSearchChanged(string value)
     {
         searchTerm = value;
-        await FilterAsync();
+        filterChanged = true;
     }
 
     private async void ClearFilters()
     {
         searchTerm = string.Empty;
         ResourceFilter = Resource.None;
-        await FilterAsync();
+        filteredSectors = allSectors;
+        filterChanged = false;
     }
 
     private bool SectorHasResource(Sector s, Resource r)

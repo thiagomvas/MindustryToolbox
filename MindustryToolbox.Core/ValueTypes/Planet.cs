@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MindustryToolbox.Core.ValueTypes;
+﻿namespace MindustryToolbox.Core.ValueTypes;
 public enum Planet
 {
     Serpulo,

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MindustryToolbox.CLI;
+﻿namespace MindustryToolbox.CLI;
 internal static class Logger
 {
     private const string InfoTag = "[INFO] ";

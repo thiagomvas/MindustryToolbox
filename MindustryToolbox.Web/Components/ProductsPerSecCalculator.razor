@@ -1,0 +1,114 @@
+﻿@inject HttpClient Http
+@using MindustryToolbox.Core
+@using MindustryToolbox.Core.Entities
+@using MindustryToolbox.Core.ValueTypes
+
+
+<MudGrid>
+    <MudItem xs="12" sm="6">
+        <MudSelect T="Resource"
+                   @bind-Value="resource"
+                   HelperText="Select a resource"
+                   Label="Resource"
+                   Variant="Variant.Outlined"
+                   Dense="true">
+            @foreach (var resource in Enum.GetValues<Resource>())
+            {
+                <MudSelectItem Value="@resource">@resource</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
+
+    <MudItem xs="12" sm="6">
+        <MudNumericField Variant="Variant.Outlined" Label="Output per second"
+                         @bind-Value="outputPerSec"
+                         Step="0.1"
+                         Min="0.1"
+                         Max="10000"
+                         HelperText="Rate of production"
+                         Dense="true" />
+    </MudItem>
+
+    <MudItem xs="12" sm="6">
+        <MudText>Liquid</MudText>
+        <MudToggleGroup @bind-Value="liquidBuff" T="BuffFlags" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
+            <MudToggleItem Value="BuffFlags.NoLiquid"> None </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.Water"> Water </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.Cryofluid"> Cryofluid </MudToggleItem>
+        </MudToggleGroup>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudText>Overdrive</MudText>
+        <MudToggleGroup @bind-Value="overdriveBuff" T="BuffFlags" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
+            <MudToggleItem Value="BuffFlags.NoOverdrive"> None </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.OverdriveProjector"> Projector </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.OverdriveDome"> Dome </MudToggleItem>
+        </MudToggleGroup>
+    </MudItem>
+
+    <MudItem xs="12">
+        <MudButton OnClick="@(async () => await CalculateProductionAsync())" Color="Color.Primary" Variant="Variant.Filled" FullWidth="true" Disabled="@isLoading">
+            @if (isLoading)
+            {
+                <MudProgressCircular Size="Size.Small" />
+            }
+            else
+            {
+                <span>Calculate</span>
+            }
+        </MudButton>
+    </MudItem>
+</MudGrid>
+
+<MudDivider />
+
+@if (node != null && resource == node.Resource && node.Resource != Resource.None && outputPerSec == node.OutputPerSecond)
+{
+    <ProductionTree Node="node" />
+}
+else
+{
+    <MudText Typo="Typo.body1" Color="Color.Error">Please calculate production to see results.</MudText>
+}
+
+@if (errorMessage != null)
+{
+    <MudText Typo="Typo.body2" Color="Color.Error">@errorMessage</MudText>
+}
+<MudAlert Severity="Severity.Info">When calculating, the website might freeze for a few seconds, this is common in low end devices.</MudAlert>
+<MudAlert Severity="Severity.Warning">This tool is currently being developed and may not work 100% as expected, if you encounter any issues, please open an issue on Github</MudAlert>
+
+@code {
+    private ProductionNode node;
+    private Resource resource = Resource.None;
+    private BuffFlags liquidBuff = BuffFlags.NoLiquid;
+    private BuffFlags overdriveBuff = BuffFlags.NoOverdrive;
+    private double outputPerSec = 10;
+    private bool isLoading = false;
+    private string errorMessage;
+
+    private async Task CalculateProductionAsync()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = null;
+
+            // Offload calculation to a background thread
+            node = await Task.Run(() => Mindustry.CalculateProduction(resource, outputPerSec, liquidBuff | overdriveBuff));
+            Console.WriteLine(liquidBuff | overdriveBuff);
+            Console.WriteLine(liquidBuff);
+            Console.WriteLine(overdriveBuff);
+            Console.WriteLine(node);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error calculating production: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
+

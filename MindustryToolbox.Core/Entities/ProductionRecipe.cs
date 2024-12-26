@@ -1,19 +1,39 @@
-﻿using MindustryToolbox.Core.ValueTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace MindustryToolbox.Core.Entities;
 public class ProductionRecipe
 {
+    /// <summary>
+    /// Gets the parent production node.
+    /// </summary>
     public ProductionNode Parent { get; init; }
+
+    /// <summary>
+    /// Gets the structure associated with this recipe.
+    /// </summary>
     public Structure Structure { get; init; }
+
+    /// <summary>
+    /// Gets the output rate per second for this recipe.
+    /// </summary>
     public double OutputPerSecond { get; init; }
+
+    /// <summary>
+    /// Gets or sets the list of input production nodes.
+    /// </summary>
     public List<ProductionNode> Inputs { get; set; } = new();
+
+    /// <summary>
+    /// Gets the amount needed to achieve the specified output rate.
+    /// </summary>
     public readonly int AmountNeeded;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ProductionRecipe"/> class with the specified parent node, structure, and output rate.
+    /// </summary>
+    /// <param name="parent">The parent production node.</param>
+    /// <param name="structure">The structure associated with this recipe.</param>
+    /// <param name="outputPerSecond">The output rate per second.</param>
     public ProductionRecipe(ProductionNode parent, Structure structure, double outputPerSecond)
     {
         Parent = parent;
@@ -23,7 +43,20 @@ public class ProductionRecipe
         var output = structure.Outputs.First(o => o.Resource == parent.Resource);
         AmountNeeded = (int)Math.Ceiling(outputPerSecond / output.Rate);
     }
+    public ProductionRecipe(ProductionNode parent, Structure structure, double outputPerSecond, double outputMultiplier)
+    {
+        Parent = parent;
+        Structure = structure;
+        OutputPerSecond = outputPerSecond;
 
+        var output = structure.Outputs.First(o => o.Resource == parent.Resource);
+        AmountNeeded = (int)Math.Ceiling(outputPerSecond / (output.Rate * outputMultiplier));
+    }
+
+    /// <summary>
+    /// Returns a string representation of the production recipe.
+    /// </summary>
+    /// <returns>A string representation of the production recipe.</returns>
     public override string ToString()
     {
         var sb = new StringBuilder();
@@ -31,6 +64,11 @@ public class ProductionRecipe
         return sb.ToString();
     }
 
+    /// <summary>
+    /// Recursively builds a string representation of the production recipe and its nested inputs.
+    /// </summary>
+    /// <param name="sb">The <see cref="StringBuilder"/> to append the string representation to.</param>
+    /// <param name="indentLevel">The current level of indentation.</param>
     internal void ToStringRecursive(StringBuilder sb, int indentLevel)
     {
         var indent = new string(' ', indentLevel * 2);
