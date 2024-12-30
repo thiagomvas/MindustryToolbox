@@ -1,40 +1,40 @@
-﻿@using MudBlazor
-@using MindustryToolbox.Core.Entities
-
+﻿@using MindustryToolbox.Core.Entities
+@using MindustryToolbox.Core.ValueTypes
 @if (Node != null)
 {
-    <MudPaper Class="p-4" Elevation="4" Style="">
-        <MudTreeView T="ProductionNode" Hover="true" Class="tree-view">
+    <div class="paper p-4">
+        <div class="tree-view">
             @if (ShowHeader)
             {
                 <!-- Main Node (Production Node) -->
-                <MudTreeViewItem Icon="@Icons.Material.Filled.Category" Text="@($"{Node.Resource}: {Node.OutputPerSecond} production per second")" Expanded="true">
-                    @foreach (var recipe in Node.Recipes)
+                <div class="tree-view-item expanded">
+                    <div class="tree-view-item-header" @onclick=@(() => IsCollapsed = !IsCollapsed)>
+                        <MudIcon Icon="@Icons.Material.Filled.Category" />
+                        <span>@($"{Node.Resource}: {Node.OutputPerSecond} production per second")</span>
+                    </div>
+                    @if (!IsCollapsed)
                     {
-                        @if (recipe != null)
-                        {
-                            <MudTreeViewItem Icon="@Icons.Material.Filled.Factory" Text="@($"{recipe.Structure.Name}: {recipe.AmountNeeded}x {recipe.Parent.Resource} tiles required, producing {Math.Round(recipe.OutputPerSecond, 4)} per second.")" Expanded="true" Class="recipe-item">
-                                @foreach (var input in recipe.Inputs)
-                        {
-                            @if (input != null)
+                        <div class="tree-view-item-children">
+                            @foreach (var recipe in Node.Recipes)
                             {
-                                <MudTreeViewItem Icon="@Icons.Material.Filled.Category" Text="@($"{input.Resource}: {input.OutputPerSecond} production required")">
-                                    <ProductionTree Node="input" ShowHeader="false" />
-                                </MudTreeViewItem>
+                                @if (recipe != null)
+                                {
+                                    <RecipeTreeItem Recipe="recipe" />
+                                }
+                                else
+                                {
+                                    <div class="tree-view-item error-item">
+                                        <div class="tree-view-item-header">
+                                            <span class="icon material-icons">error</span>
+                                            <span>Recipe data missing</span>
+                                        </div>
+                                    </div>
+                                }
                             }
-                            else
-                            {
-                                <MudTreeViewItem Text="Missing Input" Icon="@Icons.Material.Filled.Error" Class="error-item" />
-                            }
-                        }
-                    </MudTreeViewItem>
-                        }
-                        else
-                        {
-                            <MudTreeViewItem Text="Recipe data missing" Icon="@Icons.Material.Filled.Error" Class="error-item" />
-                        }
+                        </div>
+
                     }
-                </MudTreeViewItem>
+                </div>
             }
             else
             {
@@ -42,36 +42,27 @@
                 {
                     @if (recipe != null)
                     {
-                        <MudTreeViewItem Icon="@Icons.Material.Filled.Factory" Text="@($"{recipe.Structure.Name}: {recipe.AmountNeeded} required, producing {Math.Round(recipe.OutputPerSecond, 4)} per second.")" Expanded="true" Class="recipe-item">
-                            @foreach (var input in recipe.Inputs)
-                            {
-                                @if (input != null)
-                                {
-                                    <MudTreeViewItem Icon="@Icons.Material.Filled.Category" Text="@($"{input.Resource}: {input.OutputPerSecond} production required")">
-                                        <ProductionTree Node="input" ShowHeader="false" />
-                                    </MudTreeViewItem>
-                                }
-                                else
-                                {
-                                    <MudTreeViewItem Text="Missing Input" Icon="@Icons.Material.Filled.Error" Class="error-item" />
-                                }
-                            }
-                        </MudTreeViewItem>
+                        <RecipeTreeItem Recipe="recipe" />
                     }
                     else
                     {
-                        <MudTreeViewItem Text="Recipe data missing" Icon="@Icons.Material.Filled.Error" Class="error-item" />
+                        <div class="tree-view-item error-item">
+                            <div class="tree-view-item-header">
+                                <span class="icon material-icons">error</span>
+                                <span>Recipe data missing</span>
+                            </div>
+                        </div>
                     }
                 }
             }
-        </MudTreeView>
-    </MudPaper>
+        </div>
+    </div>
 }
 else
 {
-    <MudAlert Severity="Severity.Error" Elevation="2" Class="no-node-alert">
-        No production node available
-    </MudAlert>
+    <div class="alert alert-error no-node-alert">
+        <span>No production node available</span>
+    </div>
 }
 
 @code {
@@ -80,4 +71,6 @@ else
 
     [Parameter]
     public bool ShowHeader { get; set; } = true;
+
+    private bool IsCollapsed = true;
 }

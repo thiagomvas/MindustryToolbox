@@ -1,0 +1,55 @@
+﻿@using MindustryToolbox.Core.Entities
+
+<div class="tree-view-item expanded recipe-item" >
+    <div class="tree-view-item-header" @onclick="ToggleExpanded">
+        <MudIcon Icon="@Icons.Material.Filled.Factory" />
+        @if(Recipe.Structure.Type == Core.ValueTypes.StructureType.Drill) {
+            <span>@($"{Recipe.Structure.Name}: {Recipe.AmountNeeded}x {Recipe.Parent.Resource} tiles required, producing {Math.Round(Recipe.OutputPerSecond, 4)} per second.")</span>
+
+        }
+        else {
+            <span>@($"{Recipe.Structure.Name}: {Recipe.AmountNeeded}x required, producing {Math.Round(Recipe.OutputPerSecond, 4)} per second.")</span>
+
+        }
+        <MudSpacer />
+        <MudIcon Icon="@(IsExpanded ? Icons.Material.Filled.KeyboardArrowDown : Icons.Material.Filled.KeyboardArrowLeft)"/>
+    </div>
+    @if (IsExpanded)
+    {
+        <div class="tree-view-item-children">
+            @foreach (var input in Recipe.Inputs)
+            {
+                @if (input != null)
+                {
+                    <div class="tree-view-item">
+                        <div class="tree-view-item-header">
+                            <MudIcon Icon="@Icons.Material.Filled.Category" />
+                            <span>@($"{input.Resource}: {Math.Round(input.OutputPerSecond, 4)} production required")</span>
+                        </div>
+                        <ProductionTree Node="input" ShowHeader="false" />
+                    </div>
+                }
+                else
+                {
+                    <div class="tree-view-item error-item">
+                        <div class="tree-view-item-header">
+                            <span class="icon material-icons">error</span>
+                            <span>Missing Input</span>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public ProductionRecipe Recipe { get; set; }
+
+    [Parameter]
+    public bool IsExpanded { get; set; } = false;
+    private void ToggleExpanded()
+    {
+        IsExpanded = !IsExpanded;
+    }
+}
