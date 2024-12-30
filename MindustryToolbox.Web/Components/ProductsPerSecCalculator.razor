@@ -64,6 +64,13 @@
 
 @if (node != null && resource == node.Resource && node.Resource != Resource.None && outputPerSec == node.OutputPerSecond)
 {
+    <MudText Typo="Typo.h5">Summary</MudText>
+    @foreach(var rate in node.GetCombinedRequiredInputRates()) {
+        <MudText Typo="Typo.body1">@rate.Resource.ToString(): @rate.Rate.ToString("0.00") / sec </MudText>
+    }
+    <MudText Typo="Typo.caption">These are the input rates required to produce this. Use these values when you already know which machines to use and only want the input rates. For more detailed info, see below.</MudText>
+
+    <MudDivider/>
     <ProductionTree Node="node" />
 }
 else
