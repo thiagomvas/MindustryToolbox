@@ -1,4 +1,5 @@
-﻿using MindustryToolbox.Core.ValueTypes;
+﻿using MindustryToolbox.Core.DTOs;
+using MindustryToolbox.Core.ValueTypes;
 
 namespace MindustryToolbox.Core.Entities;
 /// <summary>
@@ -29,7 +30,7 @@ public class Sector
     /// <summary>
     /// Gets or sets the vulnerabilities of the sector.
     /// </summary>
-    public string[] VulnerableTo { get; set; } = [];
+    public List<Sector> VulnerableTo { get; set; } = [];
 
     /// <summary>
     /// Gets or sets the planet on which the sector is located.
@@ -41,6 +42,8 @@ public class Sector
     /// </summary>
     public SectorType Type { get; set; } = SectorType.Survival;
 
+    internal string[] vulnerableToNames = [];
+
     /// <summary>
     /// Returns a string that represents the current sector.
     /// </summary>
@@ -48,5 +51,32 @@ public class Sector
     public override string ToString()
     {
         return $"Name: {Name}, Resources: {Resources}, Threat: {Threat}, NumOfWaves: {NumOfWaves}, VulnerableTo: {string.Join(", ", VulnerableTo)}, Planet: {Planet}";
+    }
+
+    internal static Sector FromDto(SectorDTO dto)
+    {
+        var result = new Sector
+        {
+            Name = dto.Name,
+            Resources = dto.Resources.ToResourceFlags(),
+            Threat = dto.Threat,
+            NumOfWaves = dto.NumOfWaves,
+            Planet = dto.Planet,
+            Type = dto.Type
+        };
+        result.vulnerableToNames = dto.VulnerableTo;
+
+        return result;
+    }
+
+    internal void FetchVulnerableTo(IEnumerable<Sector> sectors)
+    {
+        foreach (var sector in sectors)
+        {
+            if (vulnerableToNames.Contains(sector.Name))
+            {
+                VulnerableTo.Add(sector);
+            }
+        }
     }
 }

@@ -105,13 +105,13 @@ else if (hasLoaded && !filterChanged)
                             </td>
                         }
                         <td>@(sector.NumOfWaves == -1 ? "N/A" : sector.NumOfWaves.ToString())</td>
-                        @if (sector.VulnerableTo.Length == 0)
+                        @if (sector.VulnerableTo.Count == 0)
                         {
                             <td>None</td>
                         }
                         else
                         {
-                            <td>@string.Join(", ", sector.VulnerableTo.Select(v => v.ToString()))</td>
+                            <td>@string.Join(", ", sector.VulnerableTo.Select(v => v.Name))</td>
                         }
                     </tr>
                 }
@@ -173,7 +173,7 @@ else
                 .Where(s =>
                     (ResourceFilter == Resource.None || s.Resources.HasFlag(ResourceFilter)) &&
                     (string.IsNullOrWhiteSpace(searchTerm) || s.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) &&
-                    (!noVulnerabilities || s.VulnerableTo.Length == 0))
+                    (!noVulnerabilities || s.VulnerableTo.Count == 0))
                 .ToArray();
         });
         StateHasChanged();

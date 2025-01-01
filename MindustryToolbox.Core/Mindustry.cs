@@ -139,43 +139,4 @@ public class Mindustry
         return node;
     }
 
-
-    public static string GetNumOfDrillNeededForResourcePerSecond(Resource resource, float resourcesPerSecExpected)
-    {
-        // Retrieve all structures that produce the target resource
-        var producers = GetStructures().Where(s => s.Outputs.Any(o => o.Resource == resource));
-
-        var sb = new StringBuilder();
-
-        foreach (var producer in producers)
-        {
-            // Find the rate at which the producer outputs the resource
-            var output = producer.Outputs.First(o => o.Resource == resource);
-
-            // Calculate how many producers are needed to meet the expected rate of the resource
-            var numProducersNeeded = Math.Ceiling(resourcesPerSecExpected / output.Rate);
-
-            sb.AppendLine($"{producer.Name} needed: {numProducersNeeded} to meet {resourcesPerSecExpected} {resource}/s.");
-
-            // Iterate through each input required by the producer
-            foreach (var requiredInput in producer.Inputs)
-            {
-                sb.AppendLine($"  - {requiredInput.Resource} needed: {requiredInput.Rate * numProducersNeeded}/s");
-
-                // Find the producers that can supply the required input resource
-                var inputProducers = GetStructures().Where(s => s.Outputs.Any(o => o.Resource == requiredInput.Resource)).ToList();
-
-                // For each input resource, calculate how many producers are needed
-                foreach (var inputProducer in inputProducers)
-                {
-                    var inputProducerOutput = inputProducer.Outputs.First(o => o.Resource == requiredInput.Resource);
-                    var numOfInputNeeded = Math.Ceiling((requiredInput.Rate * numProducersNeeded) / inputProducerOutput.Rate);
-                    sb.AppendLine($"    {inputProducer.Name} needed: {numOfInputNeeded} to meet {requiredInput.Rate * numProducersNeeded}/s.");
-                }
-            }
-        }
-
-        return sb.ToString();
-    }
-
 }

@@ -58,12 +58,15 @@ internal static class Utils
                 Threat = threat,
                 Resources = resources,
                 NumOfWaves = numOfWaves,
-                VulnerableTo = ParseVulnerableTo(parts[14]),
                 Planet = Planet.Serpulo
             };
+            result.vulnerableToNames = ParseVulnerableTo(parts[14]);
 
             sectors.Add(result);
         }
+
+        foreach (var sector in sectors)
+            sector.FetchVulnerableTo(sectors);
 
         return sectors;
     }
