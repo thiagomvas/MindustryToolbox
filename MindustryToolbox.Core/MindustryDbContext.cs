@@ -13,9 +13,9 @@ public class MindustryDbContext
         var sectorsFilePath = Path.Combine(AppContext.BaseDirectory, "Resources/Sectors.txt");
         Sectors = Utils.ParseSectors(sectorsFilePath);
     }
-    public void ParseSectors(string sectorText)
+    public void ParseSectors(string sectorJson)
     {
-        Sectors = Utils.ParseSectorsFromText(sectorText.Split('\n'));
+        Sectors = Utils.ParseSectorsFromJson(sectorJson);
     }
 
 }

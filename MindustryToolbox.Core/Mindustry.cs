@@ -34,17 +34,17 @@ public class Mindustry
     {
         if (Instance.Sectors is null)
         {
-            var sectorsFilePath = Path.Combine(AppContext.BaseDirectory, "Resources/Sectors.txt");
+            var sectorsFilePath = Path.Combine(AppContext.BaseDirectory, "Resources/Sectors.json");
             Instance.Sectors = Utils.ParseSectors(sectorsFilePath);
         }
         return Instance.Sectors;
     }
 
-    public static IEnumerable<Sector> GetSectors(string sectorText)
+    public static IEnumerable<Sector> GetSectors(string sectorJson)
     {
         if (Instance.Sectors is null)
         {
-            Instance.Sectors = Utils.ParseSectorsFromText(sectorText.Split('\n'));
+            Instance.Sectors = Utils.ParseSectorsFromJson(sectorJson);
         }
         return Instance.Sectors;
     }

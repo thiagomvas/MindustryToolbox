@@ -150,7 +150,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         hasLoaded = false;
-        var text = await Http.GetStringAsync("data/Sectors.txt");
+        var text = await Http.GetStringAsync("data/Sectors.json");
         var context = new MindustryDbContext();
         context.ParseSectors(text);
         allSectors = context.Sectors.ToArray();

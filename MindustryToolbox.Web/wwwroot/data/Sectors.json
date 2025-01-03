@@ -1,0 +1,5762 @@
+[
+  {
+    "Name": "Ground Zero",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 10,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Frozen Forest",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 15,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "The Craters",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Biomass Synthesis Facility",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Ruinous Shores",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Stained Mountains",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Fungal Pass",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "Windswept Islands",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Overgrowth",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "Tar Fields",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 40,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Nuclear Production Complex",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": 50,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Extraction Outpost",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "Salt Flats",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "Impact 0078",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Desolate Rift",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 3,
+    "NumOfWaves": 18,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "Planetary Launch Terminal",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "0",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "1",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "2",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "3",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "4",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "5",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "6",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "7",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "8",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "9",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "10",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "11",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "12",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "13",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "14",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "15(Ground Zero)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 10,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "16",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "17",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "18(The Craters)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "19",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "20(Stained Mountains)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "21(Fungal Pass)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "22",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "23(Tar Fields)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 40,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "24",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "25",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "26",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "27",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "28",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "29",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "30",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "31",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "32",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "33",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "34",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "35",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "36",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "37",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "38",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "39",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "40",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "41",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "42",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "43",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "44",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "45",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "46",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "47",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "48",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "49",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "50",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "51",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "52",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "53",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "54",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "55",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "56",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "57",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "58",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "59",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "60",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "61",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "62",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "63",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "64",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "65",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "66",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "67",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "68",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "69",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "70",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "71",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "72",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "73",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "74",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "75",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "76",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "77",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "78",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "79",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "80",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "81(Biomass Synthesis Facility)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "82",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "83",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "84",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "85",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "86(Frozen Forest)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 15,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "87",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "88",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "89",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "90",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "91",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "92",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "93(Planetary Launch Terminal)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "94",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "95",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "96",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "97",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "98",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "99",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "100",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "101(Salt Flats)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "102",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "103",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "104",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "105",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "106",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "107",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "108",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "109",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "110",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "111",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "112",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "113",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "114",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "115",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "116",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "117",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "118",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "119",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "120",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "121",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "122",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "123(Desolate Rift)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 3,
+    "NumOfWaves": 18,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "124",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "125",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "126",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "127",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "128",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "129",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "130(Nuclear Production Complex)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 2,
+    "NumOfWaves": 50,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "131",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "132",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "133",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "134(Overgrowth)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "135",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "136",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "137",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "138",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "139",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "140",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "141",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "142",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "143",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "144",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "145",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "146",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "147",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "148",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "149",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "150",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "151",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "152",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "153",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "154",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "155",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "156",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "157",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "158",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "159",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "160",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "161",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "162",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "163",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "164",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "165(Extraction Outpost)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "166",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "167",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "168",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "169",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "170",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "171",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "172",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "173",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "174",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "175",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "176",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "177",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "178",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "179",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "180",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "181",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "182",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "183",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "184",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "185",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "186",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "187",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "188",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "189",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "190",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "191",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "192",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "193",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "194",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "195",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "196",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "197",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "198",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "199",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "200",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "201",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "202",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "203",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "204",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "205",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "206",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "207",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "208",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "209",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "210",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "211",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "212",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "213(Ruinous Shores)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 30,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "214",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "215",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "216",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "217",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "218",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "219",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "220",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "221",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "222",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "223",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "224",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "225",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "226",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "227(Impact 0078)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": false,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "228",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "229",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "230",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "231",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "232",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "233",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "234",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": 65,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "235",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "236",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "237",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "238",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "239",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "240",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "241",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "242",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "243",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": false,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "244",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "245",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "246(Windswept Islands)",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "247",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": false,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": true
+    },
+    "Threat": 0,
+    "NumOfWaves": 20,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "248",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "249",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "250",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "251",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "252",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "253",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "254",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "255",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "256",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "257",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "258",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "259",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "260",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "261",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "262",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "263",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": false,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": 55,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "264",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 4,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "265",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 3,
+    "NumOfWaves": -1,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 0
+  },
+  {
+    "Name": "266",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "267",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 45,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "268",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 2,
+    "NumOfWaves": 35,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "269",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": true,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "270",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": true,
+      "HasWater": true,
+      "HasOil": false,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  },
+  {
+    "Name": "271",
+    "Resources": {
+      "HasCopper": true,
+      "HasLead": true,
+      "HasSand": true,
+      "HasCoal": true,
+      "HasTitanium": true,
+      "HasThorium": false,
+      "HasScrap": false,
+      "HasWater": true,
+      "HasOil": true,
+      "HasMagma": false
+    },
+    "Threat": 1,
+    "NumOfWaves": 25,
+    "VulnerableTo": [],
+    "Planet": 0,
+    "Type": 1
+  }
+]
