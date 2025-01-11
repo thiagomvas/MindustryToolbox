@@ -26,6 +26,7 @@
         break;
 
     case CalculatorType.StructureInput:
+        <StructureInputCalculator/>
         break;
 
     default:
@@ -53,31 +54,13 @@
 
             var json = await Http.GetStringAsync("data/Structures.json");
             Mindustry.GetStructures(json);
+            Console.WriteLine(json);
 
             node = Mindustry.CalculateProduction(resource, outputPerSec);
         }
         catch (Exception ex)
         {
             errorMessage = $"Failed to load structures: {ex.Message}";
-        }
-        finally
-        {
-            isLoading = false;
-        }
-    }
-
-    private void CalculateProduction()
-    {
-        try
-        {
-            isLoading = true;
-            errorMessage = null;
-            node = Mindustry.CalculateProduction(resource, outputPerSec);
-            Console.WriteLine(node);
-        }
-        catch (Exception ex)
-        {
-            errorMessage = $"Error calculating production: {ex.Message}";
         }
         finally
         {

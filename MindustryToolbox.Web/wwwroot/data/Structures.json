@@ -1,5 +1,4 @@
 [
-
   {
     "Name": "Mechanical Drill",
     "Type": "Drill",
@@ -134,7 +133,6 @@
         "Resource": "Scrap",
         "Rate": 0.213750
       },
-
       {
         "Resource": "Coal",
         "Rate": 0.157500
@@ -150,7 +148,6 @@
     ],
     "Inputs": []
   },
-
   {
     "Name": "Silicon Smelter",
     "Type": "Factory",
@@ -339,7 +336,6 @@
       }
     ]
   },
-
   {
     "Name": "Separator",
     "Type": "Factory",
@@ -349,7 +345,6 @@
         "Resource": "Copper",
         "Rate": 0.72
       },
-
       {
         "Resource": "Lead",
         "Rate": 0.43
@@ -501,6 +496,130 @@
       {
         "Resource": "SporePod",
         "Rate": 0.75
+      }
+    ]
+  },
+  {
+    "Name": "Differential Generator",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Pyratite",
+        "Rate": 0.27
+      },
+      {
+        "Resource": "Cryofluid",
+        "Rate": 6
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 1080
+      }
+    ]
+  },
+  {
+    "Name": "RTG Generator",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Thorium",
+        "Rate": 0.07
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 270
+      }
+    ]
+  },
+  {
+    "Name": "Impact Reactor",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "BlastCompound",
+        "Rate": 0.43
+      },
+      {
+        "Resource": "Cryofluid",
+        "Rate": 15
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 7800
+      }
+    ]
+  },
+  {
+    "Name": "Thorium Reactor",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Thorium",
+        "Rate": 0.17
+      },
+      {
+        "Resource": "Cryofluid",
+        "Rate": 2.4
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 900
+      }
+    ]
+  },
+  {
+    "Name": "Steam Generator",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Water",
+        "Rate": 6
+      },
+      {
+        "Resource": "Coal",
+        "Rate": 0.67
+      },
+      {
+        "Resource": "SporePod",
+        "Rate": 0.67
+      },
+      {
+        "Resource": "BlastCompound",
+        "Rate": 0.67
+      },
+      {
+        "Resource": "Pyratite",
+        "Rate": 0.67
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 330
+      }
+    ]
+  },
+  {
+    "Name": "Combustion Generator",
+    "Type": "Factory",
+    "Inputs": [
+      {
+        "Resource": "Coal",
+        "Rate": 0.5
+      }
+    ],
+    "Outputs": [
+      {
+        "Resource": "Power",
+        "Rate": 60
       }
     ]
   }

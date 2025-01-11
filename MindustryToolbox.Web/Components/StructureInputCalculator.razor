@@ -1,0 +1,126 @@
+@inject HttpClient Http
+@using MindustryToolbox.Core
+@using MindustryToolbox.Core.Entities
+@using MindustryToolbox.Core.ValueTypes
+
+
+<MudGrid>
+    <MudItem xs="12" sm="6">
+        <MudSelect T="Structure"
+                   @bind-Value="structure"
+                   HelperText="Select a resource"
+                   Label="Resource"
+                   Variant="Variant.Outlined"
+                   Dense="true">
+            @foreach (var s in structures)
+            {
+                <MudSelectItem Value="@s">@s.Name</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
+
+    <MudItem xs="12" sm="6">
+        <MudNumericField Variant="Variant.Outlined" Label="Amount"
+                         @bind-Value="amount"
+                         Step="1"
+                         Min="1"
+                         Max="10000"
+                         HelperText="Amount of structures"
+                         Dense="true" />
+    </MudItem>
+
+    <MudItem xs="12" sm="6">
+        <MudText>Liquid</MudText>
+        <MudToggleGroup @bind-Value="liquidBuff" T="BuffFlags" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
+            <MudToggleItem Value="BuffFlags.NoLiquid"> None </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.Water"> Water </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.Cryofluid"> Cryofluid </MudToggleItem>
+        </MudToggleGroup>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudText>Overdrive</MudText>
+        <MudToggleGroup @bind-Value="overdriveBuff" T="BuffFlags" Outlined="true" Delimiters="true" Rounded="false" CheckMark="true">
+            <MudToggleItem Value="BuffFlags.NoOverdrive"> None </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.OverdriveProjector"> Projector </MudToggleItem>
+            <MudToggleItem Value="BuffFlags.OverdriveDome"> Dome </MudToggleItem>
+        </MudToggleGroup>
+    </MudItem>
+
+    <MudItem xs="12">
+        <MudButton OnClick="@(async () => await CalculateProductionAsync())" Color="Color.Primary" Variant="Variant.Filled" FullWidth="true" Disabled="@isLoading">
+            @if (isLoading)
+            {
+                <MudProgressCircular Size="Size.Small" />
+            }
+            else
+            {
+                <span>Calculate</span>
+            }
+        </MudButton>
+    </MudItem>
+</MudGrid>
+
+<MudDivider />
+
+@if (nodes != null)
+{
+    <MudText Typo="Typo.h5">Summary</MudText>
+    <MudText Typo="Typo.caption">These are the input rates required to produce this. Use these values when you already know which machines to use and only want the input rates. For more detailed info, see below.</MudText>
+
+    <MudDivider/>
+    foreach (var node in nodes)
+    {
+        <ProductionTree Node="node" IsCollapsed="true"/>
+    }
+}
+else
+{
+    <MudText Typo="Typo.body1" Color="Color.Error">Please calculate production to see results.</MudText>
+}
+
+@if (errorMessage != null)
+{
+    <MudText Typo="Typo.body2" Color="Color.Error">@errorMessage</MudText>
+}
+<MudAlert Severity="Severity.Info">When calculating, the website might freeze for a few seconds, this is common in low end devices.</MudAlert>
+<MudAlert Severity="Severity.Warning">This tool is currently being developed and may not work 100% as expected, if you encounter any issues, please open an issue on Github</MudAlert>
+
+@code {
+    private ProductionNode[] nodes;
+    private Structure structure;
+    private double amount;
+    private List<Structure> structures = [];
+    private BuffFlags liquidBuff = BuffFlags.NoLiquid;
+    private BuffFlags overdriveBuff = BuffFlags.NoOverdrive;
+    private bool isLoading = false;
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        structures = Mindustry.GetStructures().OrderBy(s => s.Name).ToList();
+    }
+
+    private async Task CalculateProductionAsync()
+    {
+        try
+        {
+            if (structure == null)
+                return;
+            isLoading = true;
+            errorMessage = null;
+            
+            // Offload calculation to a background thread
+            nodes = await Task.Run(() => Mindustry.GetInputRequiredToFuelStructures(structure, (int)amount, liquidBuff | overdriveBuff));
+            
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error calculating production: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
+
