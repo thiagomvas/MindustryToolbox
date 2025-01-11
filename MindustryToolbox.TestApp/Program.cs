@@ -3,34 +3,11 @@ using MindustryToolbox.Core.ValueTypes;
 
 var structures = Mindustry.GetStructures();
 
-var node = Mindustry.CalculateProduction(Resource.Copper, 10);
+var impactReactor = structures.FirstOrDefault(s => s.Name == "Impact Reactor");
 
-Console.WriteLine(node);
+var inputRequired = Mindustry.GetInputRequiredToFuelStructures(impactReactor, 4, BuffFlags.OverdriveProjector);
 
-var rates = node.GetCombinedRequiredInputRates();
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine();
-
-foreach (var rate in rates)
+foreach(var node in inputRequired)
 {
-    Console.WriteLine($"{rate.Rate} {rate.Resource}/sec");
+    Console.WriteLine($"{node.Resource} : {node.OutputPerSecond}");
 }
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine("WITH OVERDRIVE");
-var node2 = Mindustry.CalculateProduction(Resource.Copper, 10, BuffFlags.Water);
-
-Console.WriteLine(node2);
-
-var rates2 = node2.GetCombinedRequiredInputRates();
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine();
-
-foreach (var rate in rates2)
-{
-    Console.WriteLine($"{rate.Rate} {rate.Resource}/sec");
-}
-

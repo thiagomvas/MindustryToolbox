@@ -24,4 +24,5 @@ public enum Resource
     Cryofluid = 1 << 18,
     Slag = 1 << 19,
     Magma = 1 << 20,
+    Power = 1 << 21,
 }

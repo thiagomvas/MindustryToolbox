@@ -139,4 +139,48 @@ public class Mindustry
         return node;
     }
 
+    public static ProductionNode[] GetInputRequiredToFuelStructures(Structure structure, int amount, BuffFlags flags = BuffFlags.NoLiquidOrOverdrive)
+    {
+        double liquidMultiplier = 1.0;
+        if(structure.LiquidBuffs.Length > 0)
+        {
+            if (flags.HasFlag(BuffFlags.Water) && structure.LiquidBuffs.Any(b => b.Liquid == Resource.Water))
+            {
+                var buff = structure.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Water);
+                liquidMultiplier = buff.Multiplier;
+            }
+            else if (flags.HasFlag(BuffFlags.Cryofluid) && structure.LiquidBuffs.Any(b => b.Liquid == Resource.Cryofluid))
+            {
+                var buff = structure.LiquidBuffs.FirstOrDefault(b => b.Liquid == Resource.Cryofluid);
+                liquidMultiplier = buff.Multiplier;
+            }
+        }
+
+        double overdriveMultiplier = 1.0;
+
+        if ((flags & BuffFlags.NoOverdrive) == 0)
+        {
+            if ((flags & BuffFlags.OverdriveProjector) > 0)
+            {
+                overdriveMultiplier = 1.5;
+
+            }
+            else if ((flags & BuffFlags.OverdriveDome) > 0)
+            {
+                overdriveMultiplier = 2.5;
+
+            }
+        }
+
+        var mult = liquidMultiplier * overdriveMultiplier;
+        
+        var roots = structure.Inputs.Select(s => new ProductionNode(s.Resource, s.Rate * amount * mult)).ToArray();
+        for (int i = 0; i < roots.Length; i++)
+        {
+            CalculateProductionRecursive(roots[i].Resource, roots[i].OutputPerSecond, roots[i], flags);
+        }
+        
+        return roots;
+    }
+
 }
